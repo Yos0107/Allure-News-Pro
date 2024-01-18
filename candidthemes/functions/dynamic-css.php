@@ -33,7 +33,7 @@ if (!function_exists('allure_news_dynamic_css')) :
         $allure_news_line_height = !empty($allure_news_theme_options['allure-news-font-line-height']) ? esc_attr( $allure_news_theme_options['allure-news-font-line-height'] ) : 1.5;
         $allure_news_letter_spacing = !empty($allure_news_theme_options['allure-news-letter-spacing']) ? esc_attr( $allure_news_theme_options['allure-news-letter-spacing'] ) : 0;
 
-        $allure_news_primary_color = !empty($allure_news_theme_options['allure-news-primary-color']) ?  esc_attr( $allure_news_theme_options['allure-news-primary-color'] ) : '#0d19a3';
+        $allure_news_primary_color = !empty($allure_news_theme_options['allure-news-primary-color']) ?  esc_attr( $allure_news_theme_options['allure-news-primary-color'] ) : '#525CEB';
     
     
         /* Menu Font Options */

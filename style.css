@@ -1959,7 +1959,7 @@ blockquote {
 ##   Top Bar
 *   ----------------------------------------------------- */
 .top-bar {
-    background-color: #0d19a3;
+    background-color: #525CEB;
     width: 100%;
 }
 
@@ -2481,7 +2481,7 @@ blockquote {
 
 .main-navigation ul li a:hover,
 .main-navigation ul li.current-menu-item>a {
-    background-color: #0d19a3;
+    background-color: #525CEB;
     color: #fff;
 
 
@@ -2881,7 +2881,7 @@ Post Content
 .widget ul.ct-nav-tabs:before,
 .about-author-box .container-title:before {
     content: '';
-    background: #0d19a3;
+    background: #525CEB;
     display: inline-block;
     position: absolute;
     left: 0;
@@ -3623,14 +3623,14 @@ div.breadcrumbs {
     top: 10px;
     left: 10px;
     z-index: 2;
-    border: 1px solid #0d19a3;
+    border: 1px solid #525CEB;
     border-radius: 100%;
     color: #fff;
     width: 30px;
     height: 30px;
     line-height: 30px;
     text-align: center;
-    background: #0d19a3;
+    background: #525CEB;
 }
 
 .ct-post-overlay .candid-allure-post-format {
@@ -4439,7 +4439,7 @@ body.ct-dark-mode,
 *   ----------------------------------------------------- */
 .cat-links a {
     display: inline-block;
-    background: #0d19a3;
+    background: #525CEB;
     padding: 3px 7px;
     margin-bottom: 5px;
     border-radius: 3px;
@@ -4538,7 +4538,7 @@ body.admin-bar .ct-sticky {
     text-decoration: none;
     max-width: 100%;
     padding: 15px 40px;
-    background: #0d19a3;
+    background: #525CEB;
     color: #fff;
     margin: auto;
 }
