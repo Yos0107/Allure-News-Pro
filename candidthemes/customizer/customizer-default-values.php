@@ -280,7 +280,6 @@ if ( !function_exists('allure_news_default_theme_options_values') ) :
             'allure-news-extra-post-formats-icons'=> true,
             'allure-news-extra-hide-read-time' => false,
             'allure-news-extra-hide-read-time-words'=> 200,
-            'allure-news-font-awesome-version-loading' => 'version-4',
             
             /*Home Page Content Hide*/
             'allure-news-front-page-content' => false,

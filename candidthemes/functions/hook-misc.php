@@ -182,7 +182,6 @@ if (!function_exists('allure_news_constuct_social_sharing')) :
         $allure_news_enable_single_sharing = $allure_news_theme_options['allure-news-enable-single-sharing'];
         $allure_news_enable_front_sharing = $allure_news_theme_options['allure-news-enable-static-page-sharing'];
         $allure_news_sharing_design = $allure_news_theme_options['allure-news-social-share-layout-options'];
-        $fonts_version = $allure_news_theme_options['allure-news-font-awesome-version-loading'];
 
         if (($allure_news_enable_blog_sharing != 1) && (!is_singular())) {
             return;
@@ -211,16 +210,7 @@ if (!function_exists('allure_news_constuct_social_sharing')) :
                 if ($allure_news_sharing_design == 'icons-name') {
                     ?>
                     <a target="_blank" href="<?php echo $allure_news_facebook_sharing_url; ?>">
-                        <i class="
-                        <?php 
-                            if($fonts_version == 'version-4'){
-                                echo 'fa fa-facebook';
-                            }elseif($fonts_version == 'version-5'){  
-                                echo 'fab fa-facebook-f';
-                            }else{
-                            echo 'fa-brands fa-facebook-f';
-                        } ?>
-                        "></i>
+                        <i class="<?php echo 'fa-brands fa-facebook-f'; ?>"></i>
                         Facebook
                     </a>
                     <a target="_blank" href="<?php echo $allure_news_twitter_sharing_url; ?>">
