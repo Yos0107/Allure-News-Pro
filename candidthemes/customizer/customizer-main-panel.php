@@ -148,6 +148,13 @@
 
 
         /**
+         * Load Preloader Settings
+         *
+         * Manage Extras
+        */
+        require get_template_directory() . '/candidthemes/customizer/customizer-preloader.php';
+
+        /**
          * Load Additonal Settings
          *
          * Manage Extras

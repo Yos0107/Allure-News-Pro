@@ -350,6 +350,21 @@ if (!function_exists('allure_news_dynamic_css')) :
                 $i++;
             }
         }
+        /*
+        *Preloader Color Options
+        */
+        if(!empty($allure_news_theme_options['allure-news-spinning-first-color'])){
+            $spininning_first_color = $allure_news_theme_options['allure-news-spinning-first-color'];
+            $allure_news_custom_css .= "#loader {  border-top-color : {$spininning_first_color}; }";
+        }
+        if(!empty($allure_news_theme_options['allure-news-spinning-second-color'])){
+            $spininning_second_color = $allure_news_theme_options['allure-news-spinning-second-color'];
+            $allure_news_custom_css .= "#loader:before {  border-top-color : {$spininning_second_color}; }";
+        }
+        if(!empty($allure_news_theme_options['allure-news-spinning-third-color'])){
+            $spininning_third_color = $allure_news_theme_options['allure-news-spinning-third-color'];
+            $allure_news_custom_css .= "#loader:after {  border-top-color : {$spininning_third_color}; }";
+        }
 
         /*
          *  Pro Color Options

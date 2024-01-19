@@ -14,43 +14,6 @@ $wp_customize->add_section( 'allure_news_extra_options', array(
     'panel'          => 'allure_news_panel',
 ) );
 
-/*Preloader Enable*/
-$wp_customize->add_setting( 'allure_news_options[allure-news-extra-preloader]', array(
-    'capability'        => 'edit_theme_options',
-    'transport' => 'refresh',
-    'default'           => $default['allure-news-extra-preloader'],
-    'sanitize_callback' => 'allure_news_sanitize_checkbox'
-) );
-$wp_customize->add_control( 'allure_news_options[allure-news-extra-preloader]', array(
-    'label'     => __( 'Enable Preloader', 'allure-news' ),
-    'description' => __( 'It will enable the preloader on the website.', 'allure-news' ),
-    'section'   => 'allure_news_extra_options',
-    'settings'  => 'allure_news_options[allure-news-extra-preloader]',
-    'type'      => 'checkbox',
-    'priority'  => 15,
-) );
-
-/*Preloader Image*/
-$wp_customize->add_setting( 'allure_news_options[allure-news-extra-preloader-image]', array(
-    'capability'    => 'edit_theme_options',
-    'default'     => $default['allure-news-extra-preloader-image'],
-    'sanitize_callback' => 'allure_news_sanitize_image'
-) );
-$wp_customize->add_control(
-    new WP_Customize_Image_Control(
-        $wp_customize,
-        'allure_news_options[allure-news-extra-preloader-image]',
-        array(
-            'label'   => __( 'Preloader Image', 'allure-news' ),
-            'section'   => 'allure_news_extra_options',
-            'settings'  => 'allure_news_options[allure-news-extra-preloader-image]',
-            'type'      => 'image',
-            'priority'  => 15,
-            'description' => __( 'This is the preloader image, it will load before the site loads.', 'allure-news' )
-        )
-    )
-);
-
 
 /*Hide Default Images*/
 $wp_customize->add_setting( 'allure_news_options[allure-news-extra-hide-default-thumbnails]', array(

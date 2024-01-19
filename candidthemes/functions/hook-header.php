@@ -38,33 +38,51 @@ if (!function_exists('allure_news_preloader')) {
 
 
         //Check if preloader is enabled from customizer
-        if ($allure_news_theme_options['allure-news-extra-preloader'] == 1) :
-            $preloader_image = $allure_news_theme_options['allure-news-extra-preloader-image'];
-
+        if ($allure_news_theme_options['allure-news-preloader'] == 1) :
+            $preloader_image = $allure_news_theme_options['allure-news-preloader-image'];
+            $preloader_text = $allure_news_theme_options['allure-news-preloader-text'];
+            $preloader_type = esc_attr($allure_news_theme_options['allure-news-preloader-type']);
             ?>
+            
             <!-- Preloader -->
-            <div id="loader-wrapper">
-                <?php
-                if(!empty($preloader_image)){
-                    ?>
-                    <img src="<?php echo esc_url($preloader_image); ?>">
+            <?php if($preloader_type == 'text'){ ?>
+                <div id="preloader">
+                    <div class="loader-inner">
+                        <div id="text-loader">
+                            <h2 id="bg-loader"><?php echo esc_html($preloader_text); ?></h2>
+                            <h2 id="fg-loader"><?php echo esc_html($preloader_text); ?></h2>
+                        </div>
+                    </div>
+                </div>
+            <?php }elseif($preloader_type == 'dots'){ ?>
+                <div id="preloader">
+                    <div class="loader-inner">
+                        <div id="text-loader">
+                            <h2 id="bg-loader">....<span>.</span></h2>
+                            <h2 id="fg-loader">....<span>.</span></h2>
+                        </div>
+                    </div>
+                </div>
+            <?php } else { ?>
+                <div id="loader-wrapper">
                     <?php
-                }else{
+                    if(($preloader_type == 'image' )){
+                        ?>
+                        <img src="<?php echo esc_url($preloader_image); ?>">
+                        <?php
+                    }else{
+                        ?>
+                        <div id="loader"></div>
+
+                    <div class="loader-section section-left"></div>
+                    <div class="loader-section section-right"></div>
+                        <?php
+                    }
                     ?>
-                    <div id="loader"></div>
+                </div>
+        <?php };
 
-                <div class="loader-section section-left"></div>
-                <div class="loader-section section-right"></div>
-                    <?php
-                }
-                ?>
-
-
-            </div>
-        <?php
-        endif;
-
-    }
+        endif; }
 }
 add_action('allure_news_before_header', 'allure_news_preloader', 20);
 
