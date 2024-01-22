@@ -107,6 +107,27 @@ $wp_customize->add_control( 'allure_news_options[allure-news-enable-trending-new
     'active_callback'=>'allure_news_header_trending_active_callback'
 ) );
 
+/*Speed of News Section*/
+$wp_customize->add_setting( 'allure_news_options[allure-news-post-speed]', array(
+    'capability'        => 'edit_theme_options',
+    'transport' => 'refresh',
+    'default'           => 10,
+    'sanitize_callback' => 'allure_news_sanitize_number_range',
+  
+  ) );
+  $wp_customize->add_control( 'allure_news_options[allure-news-post-speed]', array(
+    'label'     => __( 'Speed Controller.', 'allure-news' ),
+    'description' => __('Change the speed.', 'allure-news'),
+    'section'   => 'allure_news_trending_news_section',
+    'settings'  => 'allure_news_options[allure-news-post-speed]',
+    'type'      => 'number',
+    'input_attrs'     => array(
+      'min' => 1,
+    ),
+    'priority'  => 5,
+    'active_callback'=>'allure_news_header_trending_active_callback'
+  ) );
+
 
 /*Trending News Position*/
 $wp_customize->add_setting( 'allure_news_options[allure-news-enable-trending-news-position]', array(

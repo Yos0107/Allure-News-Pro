@@ -303,6 +303,8 @@ if (!function_exists('allure_news_trending_news_item')) {
         $trending_title = esc_attr($allure_news_theme_options['allure-news-enable-trending-news-text']);
         $trending_thumnail = $allure_news_theme_options['allure-news-enable-trending-image'];
         $trending_post_type = $allure_news_theme_options['allure-news-enable-trending-news-selection'];
+        $speed_controller = $allure_news_theme_options[ 'allure-news-post-speed'];
+
         if (is_rtl()) {
             $marquee_class = 'trending-right';
         } else {
@@ -344,16 +346,16 @@ if (!function_exists('allure_news_trending_news_item')) {
                 <?php
                 endif;
                 ?>
-                <div class="trending-content <?php echo $marquee_class; ?>">
+                <div class="trending-content <?php echo $marquee_class; ?>" data-speed="<?php echo absint( $speed_controller ); ?>">
                     <?php
                     while ($query->have_posts()) :
                         $query->the_post();
                         ?>
                         <a href="<?php the_permalink(); ?>"
-                           title="<?php the_title(); ?>">
+                        title="<?php the_title(); ?>">
                             <?php if ($trending_thumnail == 1): ?>
                                 <span class="img-marq">
-                                     <?php the_post_thumbnail('thumbnail'); ?>
+                                    <?php the_post_thumbnail('thumbnail'); ?>
                                 </span>
                             <?php endif; ?>
                             <?php the_title(); ?>
