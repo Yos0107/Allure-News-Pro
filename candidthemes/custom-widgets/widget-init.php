@@ -45,6 +45,9 @@ if ( ! function_exists( 'allure_news_load_widgets' ) ) :
         //Category Tabbed Widget
         register_widget( 'Allure_News_Category_Tabbed_Widget' );
 
+        //Category Tabbed Widget
+        register_widget( 'Allure_News_Category_Tabbed_Post' );
+
         // Thumbnail Widget.
         register_widget( 'Allure_News_Thumb_Posts' );
 
