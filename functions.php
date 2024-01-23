@@ -374,28 +374,28 @@ function allure_news_scripts()
         'allure-news-navigation',
         get_template_directory_uri() . '/js/navigation.js',
         array(),
-        '20151215',
+        _S_VERSION,
         true
     );
     wp_enqueue_script(
         'marquee',
         get_template_directory_uri() . '/candidthemes/assets/framework/marquee/jquery.marquee.js',
         array(),
-        '20151215',
+        _S_VERSION,
         true
     );
     wp_enqueue_script(
         'allure-news-skip-link-focus-fix',
         get_template_directory_uri() . '/js/skip-link-focus-fix.js',
         array(),
-        '20151215',
+        _S_VERSION,
         true
     );
     wp_enqueue_script(
         'magnific-popup',
         get_template_directory_uri() . '/candidthemes/assets/framework/magnific/jquery.magnific-popup.js',
         array( 'jquery' ),
-        '20151215'
+        _S_VERSION
     );
     /*Sticky Sidebar*/
     if ( !empty($allure_news_theme_options['allure-news-enable-sticky-sidebar']) && absint( $allure_news_theme_options['allure-news-enable-sticky-sidebar'] ) == 1 ) {
@@ -403,7 +403,7 @@ function allure_news_scripts()
             'theia-sticky-sidebar',
             get_template_directory_uri() . '/candidthemes/assets/js/theia-sticky-sidebar.js',
             array(),
-            '20151215',
+            _S_VERSION,
             true
         );
     }
@@ -423,7 +423,7 @@ function allure_news_scripts()
         'allure-news-custom',
         get_template_directory_uri() . '/candidthemes/assets/js/custom.js',
         array( 'jquery' ),
-        '20151215',
+        _S_VERSION,
         true
     );
     
@@ -433,7 +433,7 @@ function allure_news_scripts()
             'allure-news-custom-pagination',
             get_template_directory_uri() . '/candidthemes/assets/js/custom-infinte-pagination.js',
             array( 'jquery' ),
-            '20151215',
+            _S_VERSION,
             true
         );
         global  $wp_query ;
