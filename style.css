@@ -589,6 +589,7 @@ img {
     /* Make sure images are scaled correctly. */
     max-width: 100%;
     /* Adhere to container width. */
+    display: block;
 }
 
 figure {
@@ -626,6 +627,7 @@ input[type="submit"] {
     background: #e6e6e6;
     color: #fff;
     padding: 5px 15px;
+    border-radius: 5px;
 }
 
 button:hover,
@@ -911,11 +913,7 @@ a:active {
 
     .allure-news-header-left-logo .allure-news-menu-container {
         border: none;
-
     }
-
-
-
 
     .main-navigation ul ul {
         width: 100%;
@@ -956,8 +954,15 @@ a:active {
 
     .ct-clock {
         margin-right: 20px;
+        padding-left: 20px;
     }
 
+    .top-bar .container-inner .ct-clock:before {
+        content: '\f133';
+        font-family: fontawesome;
+        position: absolute;
+        left: 30px;
+    }
 
     .top-left-col,
     .top-right-col,
@@ -1496,13 +1501,13 @@ blockquote {
     .container-inner #primary {
         width: 70%;
         float: left;
-        padding-right: 15px;
+        padding-right: 25px;
     }
 
     .container-inner #secondary {
         width: 30%;
         float: right;
-        padding-left: 15px;
+        padding-left: 25px;
     }
 
     .left-sidebar .container-inner #primary {
@@ -1694,15 +1699,16 @@ blockquote {
     border: medium none;
     display: table-cell;
     font-weight: normal !important;
-    height: 50px;
+    height: 40px;
+    width: 40px;
     line-height: 1;
     margin-right: 5px;
     padding: 0;
     text-align: center;
     vertical-align: middle;
-    width: 50px;
     overflow: hidden;
     font-size: 0;
+    border-radius: 5px;
 }
 
 .allure-news-menu-social li {
@@ -1727,8 +1733,8 @@ blockquote {
     width: inherit;
 }
 
-.allure-news-menu-social li a:hover {
-    opacity: 0.7;
+.allure_news_widget_author ul.menu a:hover {
+    background-color: #525CEB;
 }
 
 .allure-news-menu-social li a:hover:before {
@@ -1741,7 +1747,7 @@ blockquote {
 
 .allure-news-menu-social li a[href*="facebook.com"],
 .meta_bottom .post-share a[href*="facebook.com"] {
-    background-color: #45619d;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="weibo.com"]:before {
@@ -1750,7 +1756,7 @@ blockquote {
 
 .allure-news-menu-social li a[href*="weibo.com"],
 .meta_bottom .post-share a[href*="weibo.com"] {
-    background-color: #DF2029;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="twitter.com"]:before {
@@ -1759,7 +1765,7 @@ blockquote {
 
 .allure-news-menu-social li a[href*="twitter.com"],
 .meta_bottom .post-share a[href*="twitter.com"] {
-    background-color: #53a8ea;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="linkedin.com"]:before {
@@ -1768,7 +1774,7 @@ blockquote {
 
 .allure-news-menu-social li a[href*="linkedin.com"],
 .meta_bottom .post-share a[href*="linkedin.com"] {
-    background-color: #1b85bc;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="plus.google.com"]:before {
@@ -1776,7 +1782,7 @@ blockquote {
 }
 
 .allure-news-menu-social li a[href*="plus.google.com"] {
-    background-color: #df4b38;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="youtube.com"]:before {
@@ -1784,7 +1790,7 @@ blockquote {
 }
 
 .allure-news-menu-social li a[href*="youtube.com"] {
-    background-color: #e82707;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="dribbble.com"]:before {
@@ -1792,7 +1798,7 @@ blockquote {
 }
 
 .allure-news-menu-social li a[href*="dribbble.com"] {
-    background-color: #c42462;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="pinterest.com"]:before {
@@ -1801,7 +1807,7 @@ blockquote {
 
 .allure-news-menu-social li a[href*="pinterest.com"],
 .meta_bottom .post-share a[href*="pinterest.com"] {
-    background-color: #ca1f26;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="bitbucket.org"]:before {
@@ -1809,7 +1815,7 @@ blockquote {
 }
 
 .allure-news-menu-social li a[href*="bitbucket.org"] {
-    background-color: #205081;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="github.com"]:before {
@@ -1817,7 +1823,7 @@ blockquote {
 }
 
 .allure-news-menu-social li a[href*="github.com"] {
-    background-color: #181617;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="codepen.io"]:before {
@@ -1833,7 +1839,7 @@ blockquote {
 }
 
 .allure-news-menu-social li a[href*="flickr.com"] {
-    background-color: #0063db;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href$="/feed/"]:before {
@@ -1845,7 +1851,7 @@ blockquote {
 }
 
 .allure-news-menu-social li a[href*="foursquare.com"] {
-    background-color: #f94877;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="instagram.com"]:before {
@@ -1853,7 +1859,7 @@ blockquote {
 }
 
 .allure-news-menu-social li a[href*="instagram.com"] {
-    background-color: #e1306c;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="tumblr.com"]:before {
@@ -1861,7 +1867,7 @@ blockquote {
 }
 
 .allure-news-menu-social li a[href*="tumblr.com"] {
-    background-color: #34465d;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="reddit.com"]:before {
@@ -1869,7 +1875,7 @@ blockquote {
 }
 
 .allure-news-menu-social li a[href*="reddit.com"] {
-    background-color: #ff4403;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="vimeo.com"]:before {
@@ -1877,7 +1883,7 @@ blockquote {
 }
 
 .allure-news-menu-social li a[href*="vimeo.com"] {
-    background-color: #23b6ea;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="digg.com"]:before {
@@ -1885,7 +1891,7 @@ blockquote {
 }
 
 .allure-news-menu-social li a[href*="digg.com"] {
-    background-color: #006094;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="twitch.tv"]:before {
@@ -1893,7 +1899,7 @@ blockquote {
 }
 
 .allure-news-menu-social li a[href*="twitch.tv"] {
-    background-color: #6441a5;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="stumbleupon.com"]:before {
@@ -1901,7 +1907,7 @@ blockquote {
 }
 
 .allure-news-menu-social li a[href*="stumbleupon.com"] {
-    background-color: #eb4823;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="delicious.com"]:before {
@@ -1909,7 +1915,7 @@ blockquote {
 }
 
 .allure-news-menu-social li a[href*="delicious.com"] {
-    background-color: #3274cf;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="vk.com"]:before {
@@ -1917,7 +1923,7 @@ blockquote {
 }
 
 .allure-news-menu-social li a[href*="vk.com"] {
-    background-color: #3274cf;
+    background-color: #000;
 }
 
 .allure-news-menu-social li a[href*="mailto:"]:before {
@@ -1931,7 +1937,7 @@ blockquote {
 
 .allure-news-menu-social li a[href*="telegram.com"],
 .allure-news-menu-social li a[href*="t.me"] {
-    background-color: #0088cc;
+    background-color: #000;
 }
 
 #secondary .allure-news-menu-social h2.widget-title {
@@ -1983,8 +1989,7 @@ blockquote {
 .trending-wrapper {
     overflow: hidden;
     position: relative;
-    margin: 15px 0;
-    border: 1px solid #ddd;
+    margin: 20px 0;
     border-left: none;
     border-right: none;
 }
@@ -2002,6 +2007,7 @@ blockquote {
     top: 0;
     z-index: 3;
     color: #fff;
+    border-radius: 0 3px 3px 0;
 }
 
 .trending-content {
@@ -2024,10 +2030,12 @@ blockquote {
     float: left;
     padding: 0 20px;
     line-height: 45px;
+    border-left: 1px solid#000;
 }
 
 .trending-content a span.img-marq img {
     width: 45px;
+    border-radius: 3px;
 }
 
 .trending-content a span.img-marq {
@@ -2116,17 +2124,18 @@ blockquote {
 .allure-news-social-top .allure-news-menu-social li a {
     text-decoration: none;
     line-height: 1;
-    height: auto;
-    width: auto;
+    height: 30px;
+    width: 30px;
     margin-right: 0;
     padding: 0;
     min-width: 20px;
     border-radius: 3px;
+    background-color: #000;
 }
 
 .allure-news-social-top .allure-news-menu-social li a:before {
     line-height: 1;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 1.5;
 }
 
@@ -2293,6 +2302,15 @@ blockquote {
     cursor: pointer;
     opacity: 0.7;
 }
+
+.search-icon-box:hover i {
+    transition: 0.3s ease-in-out;
+}
+
+.search-icon-box:hover i {
+    color: #525CEB;
+}
+
 
 /*  Top Bar Search Form
 ========================================== */
@@ -2479,12 +2497,26 @@ blockquote {
     color: #222
 }
 
-.main-navigation ul li a:hover,
-.main-navigation ul li.current-menu-item>a {
+.main-navigation ul li a:before,
+.main-navigation ul li.current-menu-item a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%);
     background-color: #525CEB;
-    color: #fff;
+    transition: width 0.3s ease-out;
+}
 
+/* .main-navigation #primary-menu li.current-menu-item>a:hover::before {
+    width: 80%;
+} */
 
+.main-navigation ul li a:hover:before,
+.main-navigation ul li.current-menu-item a:hover:before {
+    width: 80%;
 }
 
 .ct-menu-search {
@@ -2612,6 +2644,7 @@ ul.ct-carousel {
     background: rgba(255, 255, 255, 0.6);
     padding: 25px 35px;
     transition: background-color 0.5s ease;
+    border-radius: 10px;
 }
 
 .carousel-thumbnail-block .slide-details {
@@ -2666,25 +2699,26 @@ ul.ct-carousel {
 
 .slick-next:before,
 .slick-prev:before {
-    font-size: 50px;
+    font-size: 40px;
     font-family: FontAwesome;
-    color: rgba(0, 0, 0, 0.6);
+    color: #525CEB;
     background: #fff;
-    display: block
+    display: block;
+    border-radius: 5px;
 }
 
 .slick-prev:before {
     content: "\f104";
-    padding: 0 15px 0 10px;
+    padding: 3px 10px 3px 15px;
 }
 
 .slick-next:before {
     content: "\f105";
-    padding: 0 10px 0 15px;
+    padding: 3px 10px 3px 15px;
 }
 
 .ct-carousel-single {
-    margin: 0 10px;
+    margin: 0 15px;
     position: relative;
 }
 
@@ -2758,6 +2792,7 @@ ul.ct-carousel {
     margin-right: 5px;
     line-height: 34px;
     margin-bottom: 10px;
+    border-radius: 3px;
 }
 
 .meta_bottom .post-share a,
@@ -2853,11 +2888,11 @@ Post Content
 #   Sidebar
 *   ----------------------------------------------------- */
 .widget {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 #secondary .sidebar-widget-container {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 #secondary .widget {
@@ -2868,16 +2903,35 @@ Post Content
 .about-author-box .container-title {
     position: relative;
     margin-bottom: 15px;
-    font-size: 20px;
-    border-bottom: 2px solid #eee;
+    font-size: 22px;
 }
+
+.sidebar-widget-container .widget-title {
+    font-size: 22px;
+}
+
+.widget_search .wp-block-search__input {
+    border-radius: 5px;
+}
+
+.widget_search .wp-block-search__button {
+    border-radius: 5px;
+    background-color: #000;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.widget_search .wp-block-search__button:hover {
+    background-color: #525CEB;
+}
+
 
 .ct-dark-mode .widget-title,
 .ct-dark-mode .about-author-box .container-title {
     border-color: #444;
 }
 
-.widget-title:before,
+/* .widget-title:before,
 .widget ul.ct-nav-tabs:before,
 .about-author-box .container-title:before {
     content: '';
@@ -2890,10 +2944,34 @@ Post Content
     max-width: 100px;
     height: 2px;
     z-index: 0;
+} */
+
+.widget-title:before,
+.widget ul.ct-nav-tabs:before,
+.about-author-box .container-title:before {
+    content: '';
+    background: #525CEB;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 100%;
+    height: 3px;
+    z-index: 0;
+    transform: translate(0, -50%);
 }
 
 .widget ul.ct-nav-tabs:before {
     height: 0;
+}
+
+.widget_block .wp-block-heading {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.widget_block li {
+    margin-bottom: 5px;
 }
 
 .ct-title-head,
@@ -2913,6 +2991,7 @@ Post Content
     position: relative;
     z-index: 1;
     background: #ff005b;
+    border-radius: 5px;
 }
 
 .widget ul.ct-nav-tabs li.ct-title-head {
@@ -3091,10 +3170,9 @@ a .ct-title-head.ct-rotate:hover,
     margin-right: 0;
 }
 
-/*.widget.allure-news-menu-social ul li a,*/
-/*.allure-news-author-profile .allure-news-menu-social li a {*/
-/*    outline: none;*/
-/*}*/
+.allure-news-menu-social li a:hover {
+    background-color: #525CEB;
+}
 
 .widget.allure-news-menu-social ul li a:hover,
 .allure-news-author-profile .allure-news-menu-social li a:hover {
@@ -3325,6 +3403,10 @@ header.page-header {
     margin: 0;
 }
 
+.related-post-entries li figure img {
+    border-radius: 10px;
+}
+
 .related-post-entries .featured-desc {
     padding: 15px;
 }
@@ -3489,17 +3571,23 @@ footer .site-info {
 #toTop {
     display: block;
     position: fixed;
-    bottom: 0;
-    right: 0;
-    padding: 5px 15px;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px 13px;
     color: #fff;
     font-size: 20px;
-    opacity: 0.7;
+    background-color: #000;
+    border-radius: 5px;
+    border: 1px solid #fff;
 }
 
 #toTop:hover {
-    opacity: 1;
+    background-color: #525CEB;
+    border: 1px solid #525CEB;
+
 }
+
+
 
 /*---------------------------------------------------
 #  Breadcrumbs
@@ -3567,6 +3655,7 @@ div.breadcrumbs {
     margin-right: 9px;
     padding: 1px 10px 1px 10px;
     color: #fff;
+    border-radius: 3px;
 }
 
 /*---------------------------------------------------
@@ -3734,7 +3823,7 @@ div.breadcrumbs {
 }
 
 .list-post .post-block-style .post-thumb {
-    margin-right: 10px;
+    margin-right: 15px;
     width: 100px;
     flex-basis: 100px;
     flex-shrink: 0;
@@ -3901,6 +3990,7 @@ div.breadcrumbs {
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    column-gap: 10px;
 }
 
 .widget ul.ct-nav-tabs li {
@@ -3962,15 +4052,15 @@ div.breadcrumbs {
     }
 
     .allure-modern-carousel.allure-news-featured-block .allure-news-col:last-child {
-        padding-left: 10px;
+        padding-left: 15px;
     }
 
     .allure-news-featured-block .allure-news-col:last-child {
-        padding-left: 7px;
+        padding-left: 30px;
     }
 
     .allure-news-featured-block .allure-news-col-2 .allure-news-col {
-        padding: 3px;
+        padding: 15px;
     }
 
     .allure-news-featured-block .allure-news-col-2 .allure-news-col:nth-child(1) {
@@ -4277,14 +4367,15 @@ div.breadcrumbs {
 
 /* 22. Preloader 2*/
 #preloader {
-	position: fixed;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	background: #fff;
-	z-index: 9999;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 9999;
 }
+
 #preloader .loader-inner {
     position: absolute;
     top: 50%;
@@ -4297,6 +4388,7 @@ div.breadcrumbs {
     transition: all 0s;
     font-size: 0;
 }
+
 #preloader .loader-inner #text-loader {
     position: relative;
     z-index: 1002;
@@ -4312,6 +4404,7 @@ div.breadcrumbs {
     height: auto;
     max-width: 90vw;
 }
+
 .loader-inner #loader h2 {
     margin: 0 0;
     font-family: 'Roboto', sans-serif;
@@ -4320,9 +4413,11 @@ div.breadcrumbs {
     font-weight: 700;
     line-height: 1;
 }
+
 #bg-loader {
     color: #7486b189;
 }
+
 #fg-loader {
     color: #222222;
     position: absolute;
@@ -4334,27 +4429,34 @@ div.breadcrumbs {
     animation-iteration-count: infinite;
     white-space: nowrap;
 }
+
 #fg-loader span {
     color: var(--primary-color);
 }
+
 @-webkit-keyframes leftToRight {
     0% {
         width: 1px;
     }
+
     95% {
         width: 100%;
     }
+
     100% {
         width: 100%;
     }
 }
+
 @keyframes leftToRight {
     0% {
         width: 1px;
     }
+
     95% {
         width: 100%;
     }
+
     100% {
         width: 100%;
     }
@@ -4503,6 +4605,28 @@ body.ct-dark-mode,
     display: block !important;
 }
 
+.slick-current.slick-active .allure-news-col .post-thumb {
+    min-height: 415px;
+}
+
+.allure-news-col .post-thumb img {
+    height: 430px;
+    object-fit: cover;
+}
+
+.allure-news-col-2 .post-thumb img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.ct-post-overlay,
+.ct-post-overlay .post-thumb,
+.post-thumb {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
 /*---------------------------------------------------
 # Top Menu
 *   ----------------------------------------------------- */
@@ -4524,12 +4648,20 @@ body.ct-dark-mode,
 /*---------------------------------------------------
 # Category links
 *   ----------------------------------------------------- */
+
 .cat-links a {
     display: inline-block;
-    background: #525CEB;
-    padding: 3px 7px;
+    padding: 8px 15px 8px 20px;
     margin-bottom: 5px;
     border-radius: 3px;
+    color: #fff;
+    background-color: #525CEB;
+    background-size: 6% 100%;
+    transition: 0.4s;
+    background-image: linear-gradient(#3D3B40, #3D3B40);
+    background-repeat: no-repeat;
+    width: max-content;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s, transform var(--e-transform-transition-duration, 0.4s);
 }
 
 .cat-links a,
@@ -4538,8 +4670,12 @@ body.ct-dark-mode,
 .cat-links a:visited:hover,
 .widget .ct-post-overlay .post-content.post-relative .cat-links a,
 .widget .ct-post-overlay .post-content.post-relative .cat-links a:visited {
-
     color: #fff;
+}
+
+.cat-links a:hover {
+    background-size: 100% 100%;
+    width: max-content;
 }
 
 /*---------------------------------------------------

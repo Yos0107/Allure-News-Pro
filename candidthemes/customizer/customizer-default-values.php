@@ -191,7 +191,7 @@ if ( !function_exists('allure_news_default_theme_options_values') ) :
 
             /*Blog Title Font Options*/
             'allure-news-font-blog-title-family-url'=> 'Roboto:400,500,300,700,400italic',
-            'allure-news-blog-title-font-size'=> 36,
+            'allure-news-blog-title-font-size'=> 28,
             'allure-news-blog-title-font-line-height'=> 1.2,
             'allure-news-blog-title-letter-spacing'=> 0,
 
