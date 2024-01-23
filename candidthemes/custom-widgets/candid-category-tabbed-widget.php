@@ -67,7 +67,7 @@ if (!class_exists('Allure_News_Category_Tabbed_Widget')) :
                 <div class="featured-tab">
                     <?php
                     if (!empty($widget_title)) {
-                        echo $args['before_title'] . esc_html($widget_title) . $args['after_title'];
+                        echo $args['before_title'] .  ('<span>' .esc_html($widget_title) .'</span>') . $args['after_title'];
                     }
                     ?>
                     <div class="ct-tabs">

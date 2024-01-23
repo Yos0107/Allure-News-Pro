@@ -44,13 +44,13 @@ if (!class_exists('Allure_News_Tabbed_Post')) :
             echo $args['before_widget'];
 
             if (!empty($title)) {
-                echo $args['before_title'] . esc_html($title) . $args['after_title'];
+                echo $args['before_title'] .  ('<span>' .esc_html($title) .'</span>') . $args['after_title'];
             }
             $popular_title = !empty($instance['popular_title']) ? $instance['popular_title'] : '';
             $recent_title = !empty($instance['recent_title']) ? $instance['recent_title'] : '';
             $post_number = !empty($instance['post-number']) ? $instance['post-number'] : '';
             $post_date = !empty($instance['post-date']) ? $instance['post-date'] : '';
-             $show_category = !empty($instance['show-category']) ? $instance['show-category'] : '';
+            $show_category = !empty($instance['show-category']) ? $instance['show-category'] : '';
             $show_excerpt = !empty($instance['show-excerpt']) ? $instance['show-excerpt'] : '';
             $excerpt_length = !empty($instance['excerpt-length']) ? $instance['excerpt-length'] : '';
             ?>

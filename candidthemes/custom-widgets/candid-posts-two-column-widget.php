@@ -52,7 +52,7 @@ if (!class_exists('Allure_News_Posts_Two_Column')) :
             $post_date = !empty($instance['post-date']) ? $instance['post-date'] : '';
             $show_category = !empty($instance['show-category']) ? $instance['show-category'] : '';
             $show_excerpt = !empty($instance['show-excerpt']) ? $instance['show-excerpt'] : '';
-             $post_number = !empty($instance['post-number']) ? $instance['post-number'] : 5;
+            $post_number = !empty($instance['post-number']) ? $instance['post-number'] : 5;
             $excerpt_length = !empty($instance['excerpt-length']) ? $instance['excerpt-length'] : '';
             $f_excerpt_length = !empty($instance['f-excerpt-length']) ? $instance['f-excerpt-length'] : '';
             global $allure_news_theme_options;
@@ -66,10 +66,10 @@ if (!class_exists('Allure_News_Posts_Two_Column')) :
                     echo $args['before_title'];
                     if(!empty($cat_id)){
                         ?>
-                        <a href="<?php echo esc_url(get_category_link($cat_id)); ?>"> <?php echo esc_html($title); ?> </a>
+                        <a href="<?php echo esc_url(get_category_link($cat_id)); ?>"> <?php echo  '<span>' .esc_html($title) .'</span>'; ?> </a>
                         <?php
                     }else{
-                        echo esc_html($title);
+                        echo  '<span>' .esc_html($title) .'</span>';
                     }
                     echo $args['after_title'];
                     ?>

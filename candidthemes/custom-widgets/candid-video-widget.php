@@ -71,10 +71,10 @@ if (!class_exists('Allure_News_Video_Widget')) {
                     echo $args['before_title'];
                     if (!empty($category_id)) {
                         ?>
-                        <a href="<?php echo esc_url(get_category_link($category_id)); ?>"> <?php echo esc_html($title); ?> </a>
+                        <a href="<?php echo esc_url(get_category_link($category_id)); ?>"> <?php echo  '<span>' .esc_html($title) .'</span>'; ?> </a>
                         <?php
                     } else {
-                        echo esc_html($title);
+                        echo '<span>' .esc_html($title) .'</span>';
                     }
                     echo $args['after_title'];
                     ?>

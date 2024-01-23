@@ -415,7 +415,7 @@ if (!function_exists('allure_news_post_carousel_customizer')) {
                 <?php
                 if ($section_title) {
                     ?>
-                    <h2 class="widget-title"> <?php echo $section_title; ?> </h2>
+                    <h2 class="widget-title"> <?php echo  ('<span>' .esc_html($section_title) .'</span>'); ?> </h2>
                     <?php
                 }
                 ?>
