@@ -294,6 +294,7 @@ if ( !function_exists('allure_news_default_theme_options_values') ) :
 
             /*Category Color*/
             'allure-news-enable-category-color' => false,
+            'allure-news-category-line-color' => '#3D3B40',
 
         );
         return apply_filters( 'allure_news_default_theme_options_values', $default_theme_options );
