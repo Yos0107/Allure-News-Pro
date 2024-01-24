@@ -4002,7 +4002,7 @@ div.breadcrumbs {
 
     .widget_allure_news_category_tabbed_widget .tab-head-wrapper {
         position: absolute;
-        top: 0;
+        top: 3px;
         right: 0;
     }
 
@@ -4077,6 +4077,8 @@ div.breadcrumbs {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    background-color: #fff;
+    padding-left: 15px;
 }
 
 .widget ul.ct-nav-tabs li {
@@ -4220,11 +4222,10 @@ div.breadcrumbs {
 *   ----------------------------------------------------- */
 .widget_allure_news_category_tabbed_widget .ct-nav-tabs {
     float: right;
-
 }
 
 .widget_allure_news_category_tabbed_widget .ct-nav-tabs li {
-    padding-right: 15px !important;
+    /* padding-right: 15px !important; */
 }
 
 .widget_allure_news_category_tabbed_widget .ct-nav-tabs li:last-child {
@@ -4233,6 +4234,11 @@ div.breadcrumbs {
 
 .widget.widget_allure_news_category_tabbed_widget ul.ct-nav-tabs:before {
     display: none;
+}
+
+.widget_allure_news_category_tabbed_widget .featured-tab ul li a .tab-head {
+    color: #444;
+    font-weight: 600;
 }
 
 .tab-head-wrapper {
