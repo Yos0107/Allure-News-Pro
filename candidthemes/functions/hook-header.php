@@ -460,7 +460,7 @@ if (!function_exists('allure_news_post_carousel_customizer')) {
                                     ?>
                                     <div class="post-meta">
                                         <?php
-                                        allure_news_featured_list_category(get_the_ID());
+                                        allure_news_featured_carousel_category(get_the_ID());
                                         ?>
                                     </div>
                                     <?php
@@ -538,17 +538,13 @@ if (!function_exists('allure_news_post_grid_layout')) {
             <div class="container-inner">
                 <div class="row widget clearfix">
                     <div class="ct-three-cols">
-
-
                         <?php
                         if ($cat_id_1) {
                             ?>
                             <h2 class="widget-title <?php echo $cat1_class; ?>">
                                 <a href="<?php echo esc_url(get_category_link($cat_id_1)); ?>"
-                                   style="color: <?php echo $text_color; ?>;">
-
-                                    <?php echo esc_html(get_cat_name($cat_id_1)); ?>
-
+                                style="color: <?php echo $text_color; ?>;">
+                                <?php echo '<span>' . esc_html(get_cat_name($cat_id_1)). '</span>'; ?>
                                 </a>
 
                             </h2>
@@ -726,8 +722,8 @@ if (!function_exists('allure_news_post_grid_layout')) {
                             ?>
                             <h2 class="widget-title <?php echo $cat2_class; ?>">
                                 <a href="<?php echo esc_url(get_category_link($cat_id_2)); ?>"
-                                   style="color: <?php echo $text_color; ?>;">
-                                    <?php echo esc_html(get_cat_name($cat_id_2)); ?>
+                                style="color: <?php echo $text_color; ?>;">
+                                <?php echo '<span>' . esc_html(get_cat_name($cat_id_2)). '</span>'; ?>
                                 </a>
                             </h2>
                             <?php
@@ -912,7 +908,7 @@ if (!function_exists('allure_news_post_grid_layout')) {
                             <h2 class="widget-title <?php echo $cat3_class; ?>">
                                 <a href="<?php echo esc_url(get_category_link($cat_id_3)); ?>"
                                    style="color: <?php echo $text_color; ?>;">
-                                    <?php echo esc_html(get_cat_name($cat_id_3)); ?>
+                                    <?php echo '<span>' . esc_html(get_cat_name($cat_id_3)). '</span>'; ?>
                                 </a>
                             </h2>
                             <?php
