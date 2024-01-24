@@ -28,12 +28,11 @@ if (!function_exists('allure_news_constuct_modern_carousel')) {
             $allure_news_enable_date = $allure_news_theme_options['allure-news-slider-post-date'];
             $allure_news_enable_author = $allure_news_theme_options['allure-news-slider-post-author'];
             $allure_news_enable_pagination = $allure_news_theme_options['allure-news-slider-slide-prev-next'];
+            $allure_news_enable_read_time = $allure_news_theme_options['allure-news-slider-post-read-time'];
             $allure_news_pagination_class = "";
             if($allure_news_enable_pagination == false){
                 $allure_news_pagination_class = "allure-news-disable-prevnext";
             }
-
-
 
 
             //echo $count;
@@ -42,7 +41,6 @@ if (!function_exists('allure_news_constuct_modern_carousel')) {
                 <?php
 
                 allure_news_main_carousel($slider_cat);
-
 
                 $query_args = array(
                     'post_type' => 'post',
@@ -114,14 +112,17 @@ if (!function_exists('allure_news_constuct_modern_carousel')) {
                                                 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                             </h3>
                                             <?php
-                                            if ($allure_news_enable_date || $allure_news_enable_author) {
+                                            if ($allure_news_enable_date || $allure_news_enable_author || $allure_news_enable_read_time) {
                                                 ?>
                                                 <div class="post-meta">
                                                     <?php
                                                     if ($allure_news_enable_date) {
                                                         allure_news_posted_on();
                                                     }
-                                                    allure_news_read_time_words_count(get_the_ID());
+                                                    if($allure_news_enable_read_time){
+                                                        allure_news_read_time_slider(get_the_ID());
+                                                    }
+                                                    // allure_news_read_time_words_count(get_the_ID());
                                                     if ($allure_news_enable_author) {
                                                         allure_news_posted_by();
                                                     }

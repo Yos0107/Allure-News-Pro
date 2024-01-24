@@ -581,7 +581,7 @@ if (!function_exists('allure_news_read_time')) :
      */
     function allure_news_read_time($post_id)
     {
-
+        global $allure_news_theme_options;
         $content = apply_filters('the_content', get_post_field('post_content', $post_id));
         $read_words = !empty($allure_news_theme_options['allure-news-extra-hide-read-time-words']) ? $allure_news_theme_options['allure-news-extra-hide-read-time-words'] : '';
         $decode_content = html_entity_decode($content);
