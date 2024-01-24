@@ -32,9 +32,6 @@ if (!function_exists('allure_news_constuct_carousel')) {
                 $allure_news_pagination_class = "allure-news-disable-prevnext";
             }
 
-
-
-
                 //echo $count;
             ?>
                 <div class="allure-news-featured-block allure-news-ct-row clearfix">
@@ -168,7 +165,9 @@ $i=1;
                                                 if ($allure_news_enable_date) {
                                                     allure_news_widget_posted_on();
                                                 }
-                                                allure_news_read_time_slider(get_the_ID());
+                                                if($allure_news_enable_read_time){
+                                                    allure_news_read_time_slider(get_the_ID());
+                                                }
                                                 if ($allure_news_enable_author) {
                                                     allure_news_widget_posted_by();
                                                 }

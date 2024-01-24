@@ -97,7 +97,14 @@ if (!function_exists('allure_news_posted_by')) :
             $show_post_author = $allure_news_theme_options['allure-news-enable-single-author'];
 
         } else {
-            $show_post_author = $allure_news_theme_options['allure-news-enable-blog-author'];
+            global $allure_news_theme_options;
+            $allure_news_enable_author_feature = $allure_news_theme_options['allure-news-slider-post-author'];
+            if($allure_news_enable_author_feature){
+                $show_post_author = $allure_news_theme_options['allure-news-slider-post-author'];
+            }else{
+
+                $show_post_author = $allure_news_theme_options['allure-news-enable-blog-author'];
+            }
         }
         if ($show_post_author == 1) {
             echo '<span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
