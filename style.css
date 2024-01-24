@@ -2675,6 +2675,11 @@ ul.ct-carousel {
     position: relative;
 }
 
+.ct-carousel-inner img {
+    border-radius: 10px;
+    max-height: 480px;
+}
+
 .slide-details {
     width: 70%;
     position: absolute;
@@ -2767,6 +2772,10 @@ ul.ct-carousel {
 .ct-below-featured-area.ct-grid-wrapper,
 .ct-missed-block {
     padding: 50px 30px;
+}
+
+.ct-header-carousel-section .slick-list .post-thumb img {
+    min-height: 305px;
 }
 
 .ct-missed-block.widget {
@@ -3401,6 +3410,7 @@ header.page-header {
     margin-bottom: 10px;
     display: inline-block;
     background-color: #fff;
+    border-radius: 3px;
 }
 
 .candid-pagination .page-numbers.current,
