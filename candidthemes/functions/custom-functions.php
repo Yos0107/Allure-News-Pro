@@ -534,7 +534,7 @@ if (!function_exists('allure_news_post_formats')) :
 endif;
 
 
-/* Word read count Pagination */
+/* Word read count */
 if (!function_exists('allure_news_read_time_words_count')) :
     /**
      * @param $content
@@ -553,7 +553,7 @@ if (!function_exists('allure_news_read_time_words_count')) :
 endif;
 
 
-/* Word read count Pagination */
+/* Slider Word read count */
 if (!function_exists('allure_news_read_time_slider')) :
     /**
      * @param $content

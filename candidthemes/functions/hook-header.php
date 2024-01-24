@@ -612,6 +612,7 @@ if (!function_exists('allure_news_post_grid_layout')) {
                                         <h3 class="post-title">
                                             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                         </h3>
+                                    <?php if ($post_date == 1 || $show_read_time == 1 || $enable_author == 1) { ?>
                                         <div class="post-meta">
                                             <?php
                                             if ($enable_date) {
@@ -625,6 +626,7 @@ if (!function_exists('allure_news_post_grid_layout')) {
                                             }
                                             ?>
                                         </div>
+                                    <?php } ?>
                                         <?php if ($show_excerpt == 1) { ?>
                                             <div class="post-excerpt">
                                                 <?php echo wp_trim_words(get_the_content(), $excerpt_length); ?>
