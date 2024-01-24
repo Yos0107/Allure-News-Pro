@@ -8,7 +8,7 @@
  */
 ?>
 <div class="about-author-box <?php echo (1 != get_option('show_avatars')) ? 'no-author-avatar' : ''; ?>">
-    <h2 class="container-title"><?php _e('Written by:', 'allure-news'); ?></h2>
+    <h2 class="container-title"><span><?php _e('Written by:', 'allure-news'); ?></span></h2>
     <div class="about-author clearfix">
         <?php if (1 == get_option('show_avatars')): ?>
             <figure class="about-author-avatar">
