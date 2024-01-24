@@ -612,7 +612,7 @@ if (!function_exists('allure_news_post_grid_layout')) {
                                         <h3 class="post-title">
                                             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                         </h3>
-                                    <?php if ($post_date == 1 || $show_read_time == 1 || $enable_author == 1) { ?>
+                                    <?php if ($enable_date == 1 || $enable_read_time == 1 || $enable_author == 1) { ?>
                                         <div class="post-meta">
                                             <?php
                                             if ($enable_date) {
