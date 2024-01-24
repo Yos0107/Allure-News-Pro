@@ -302,7 +302,7 @@ if (!function_exists('allure_news_you_may_missed')) {
                                                 allure_news_posted_on_color($text_color);
                                             }
                                             if ($show_read_time == 1){
-                                                allure_news_read_time_words_count(get_the_ID());
+                                                allure_news_read_time_slider(get_the_ID());
                                             }
                                             if ($enable_author) {
                                                 allure_news_widget_posted_by_color($text_color);
