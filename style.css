@@ -1496,6 +1496,12 @@ blockquote {
     background: #222;
 }
 
+.allure-news-cat_column .row.clearfix {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
 
 @media (min-width: 768px) {
     .container-inner #primary {
@@ -1587,12 +1593,6 @@ blockquote {
 
     #primary .ct-three-cols {
         width: 100%;
-    }
-
-    .allure-news-cat_column .row.clearfix {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 30px;
     }
 
     #primary article.three-columns:nth-child(3n+1),
@@ -2505,16 +2505,27 @@ blockquote {
 }
 
 .main-navigation ul ul li:hover>ul {
-    left: 228px;
+    left: 220px;
+    top: -1px;
 }
 
 
 .navbar-nav>li.menu-item-has-children>a::after {
-    color: #000;
     content: "\f0d7";
     font-family: FontAwesome;
     font-size: 12px;
     margin-left: 7px;
+    color: #ccc;
+}
+
+.navbar-nav .sub-menu>li.menu-item-has-children>a::after {
+    content: "\f0d7";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-family: FontAwesome;
+    font-size: 12px;
     color: #ccc;
 }
 
@@ -3400,13 +3411,9 @@ header.page-header {
 }
 
 @media (max-width: 767px) {
-    body.right-sidebar #secondary {
+    /* body.right-sidebar #secondary {
         margin-top: 40px;
-    }
-
-    body.right-sidebar #secondary {
-        margin-bottom: 40px;
-    }
+    } */
 
     .post-navigation .nav-previous,
     .post-navigation .nav-next {
@@ -3424,9 +3431,7 @@ header.page-header {
         border-left: none;
     }
 
-    .ct-cat-cols .ct-two-cols:nth-child(2),
-    .ct-cat-cols .ct-three-cols:nth-child(2),
-    .ct-cat-cols .ct-three-cols:nth-child(3) {
+    .ct-cat-cols .ct-two-cols:nth-child(2) {
         margin-top: 40px;
     }
 
@@ -5000,8 +5005,35 @@ body.admin-bar .ct-sticky {
         height: 300px;
     }
 
+    .ct-container-main {
+        padding: 0 15px;
+        margin-bottom: 0px;
+    }
+
     /* responsive for ct-three-cols */
     .ct-below-featured-area.ct-grid-wrapper {
         padding: 20px 0;
     }
+}
+
+
+/* // Large devices (desktops, less than 576px) */
+@media (max-width: 576px) {
+
+    p {
+        margin-bottom: 0.5em;
+    }
+
+    .allure-news-cat_column .row.clearfix {
+        grid-template-columns: 1fr;
+    }
+
+    .allure-news-content-area {
+        padding: 15px 0;
+    }
+
+    .ct-missed-block {
+        padding: 30px 30px;
+    }
+
 }
