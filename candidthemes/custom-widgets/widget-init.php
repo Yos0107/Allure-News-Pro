@@ -32,9 +32,6 @@ if ( ! function_exists( 'allure_news_load_widgets' ) ) :
 
         // Grid Layout Widget.
         register_widget( 'Allure_News_Grid_Post' );
-
-        // Advertisement Widget.
-        register_widget( 'Allure_News_Advertisement_Widget' );
     
         // Video Widget.
         register_widget( 'Allure_News_Video_Widget' );

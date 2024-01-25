@@ -415,7 +415,8 @@ if (!function_exists('allure_news_post_carousel_customizer')) {
                 <?php
                 if ($section_title) {
                     ?>
-                    <h2 class="widget-title"> <?php echo  ('<span>' .esc_html($section_title) .'</span>'); ?> </h2>
+                    <h2 class="widget-title"> <?php 
+                    echo  ('<span style= background-color:' .$bg_color.'>' .esc_html($section_title) .'</span>'); ?> </h2>
                     <?php
                 }
                 ?>
@@ -544,7 +545,7 @@ if (!function_exists('allure_news_post_grid_layout')) {
                             <h2 class="widget-title <?php echo $cat1_class; ?>">
                                 <a href="<?php echo esc_url(get_category_link($cat_id_1)); ?>"
                                 style="color: <?php echo $text_color; ?>;">
-                                <?php echo '<span>' . esc_html(get_cat_name($cat_id_1)). '</span>'; ?>
+                                <?php echo '<span style= background-color:' .$bg_color. '>' . esc_html(get_cat_name($cat_id_1)). '</span>'; ?>
                                 </a>
 
                             </h2>
@@ -725,7 +726,7 @@ if (!function_exists('allure_news_post_grid_layout')) {
                             <h2 class="widget-title <?php echo $cat2_class; ?>">
                                 <a href="<?php echo esc_url(get_category_link($cat_id_2)); ?>"
                                 style="color: <?php echo $text_color; ?>;">
-                                <?php echo '<span>' . esc_html(get_cat_name($cat_id_2)). '</span>'; ?>
+                                <?php echo '<span style= background-color:' .$bg_color. '>' . esc_html(get_cat_name($cat_id_2)). '</span>'; ?>
                                 </a>
                             </h2>
                             <?php
@@ -910,7 +911,7 @@ if (!function_exists('allure_news_post_grid_layout')) {
                             <h2 class="widget-title <?php echo $cat3_class; ?>">
                                 <a href="<?php echo esc_url(get_category_link($cat_id_3)); ?>"
                                    style="color: <?php echo $text_color; ?>;">
-                                    <?php echo '<span>' . esc_html(get_cat_name($cat_id_3)). '</span>'; ?>
+                                    <?php echo '<span style= background-color:' .$bg_color. '>' . esc_html(get_cat_name($cat_id_3)). '</span>'; ?>
                                 </a>
                             </h2>
                             <?php

@@ -379,7 +379,6 @@ if (!function_exists('allure_news_dynamic_css')) :
                 ";
                 }
 
-
                 $i++;
             }
         }

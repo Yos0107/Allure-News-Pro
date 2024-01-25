@@ -88,7 +88,6 @@ require get_template_directory() . '/candidthemes/custom-widgets/candid-tabbed-w
 require get_template_directory() . '/candidthemes/custom-widgets/candid-category-column-widget.php';
 require get_template_directory() . '/candidthemes/custom-widgets/candid-three-category-column-widget.php';
 require get_template_directory() . '/candidthemes/custom-widgets/candid-grid-post-widget.php';
-require get_template_directory() . '/candidthemes/custom-widgets/candid-advertisement-widget.php';
 require get_template_directory() . '/candidthemes/custom-widgets/candid-video-widget.php';
 require get_template_directory() . '/candidthemes/custom-widgets/candid-posts-two-column-widget.php';
 require get_template_directory() . '/candidthemes/custom-widgets/candid-category-tabbed-widget.php';
