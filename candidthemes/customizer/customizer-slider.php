@@ -96,7 +96,7 @@ $wp_customize->add_setting( 'allure_news_options[allure-news-slider-post-types]'
     'sanitize_callback' => 'allure_news_sanitize_select'
 ) );
 $wp_customize->add_control( 'allure_news_options[allure-news-slider-post-types]', array(
-    'label'     => __( 'Select Slider Types', 'allure-news' ),
+    'label'     => __( 'Select Featured Right Section Types', 'allure-news' ),
     'description' => __('Select the preferred types for your featured section.', 'allure-news'),
     'section'   => 'allure_news_slider_section',
     'settings'  => 'allure_news_options[allure-news-slider-post-types]',
@@ -176,7 +176,7 @@ $wp_customize->add_setting( 'allure_news_options[allure-news-slider-post-date]',
 ) );
 $wp_customize->add_control( 'allure_news_options[allure-news-slider-post-date]', array(
     'label'     => __( 'Enable the Post Date', 'allure-news' ),
-    'description' => __('Show or Hide the Post Date from the featured posts.', 'allure-news'),
+    'description' => __('Show or Hide the Post Date from the featured section.', 'allure-news'),
     'section'   => 'allure_news_slider_section',
     'settings'  => 'allure_news_options[allure-news-slider-post-date]',
     'type'      => 'checkbox',
@@ -192,7 +192,7 @@ $wp_customize->add_setting( 'allure_news_options[allure-news-slider-post-author]
 ) );
 $wp_customize->add_control( 'allure_news_options[allure-news-slider-post-author]', array(
     'label'     => __( 'Enable the Post Author', 'allure-news' ),
-    'description' => __('Show or Hide the Post Author from the featured posts.', 'allure-news'),
+    'description' => __('Show or Hide the Post Author from the featured section.', 'allure-news'),
     'section'   => 'allure_news_slider_section',
     'settings'  => 'allure_news_options[allure-news-slider-post-author]',
     'type'      => 'checkbox',

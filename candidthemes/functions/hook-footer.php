@@ -232,7 +232,7 @@ if (!function_exists('allure_news_you_may_missed')) {
             <?php
             if($sec_title){
                 ?>
-                <h2 class="widget-title"> <?php echo '<span>' .esc_html($sec_title) .'</span>'; ?> </h2>
+                <h2 class="widget-title"> <?php echo '<span style= background-color:' .$bg_color. '>' .esc_html($sec_title) .'</span>'; ?> </h2>
                 <?php
             }
             ?>
