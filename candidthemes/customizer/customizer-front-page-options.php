@@ -549,8 +549,8 @@ $wp_customize->add_setting( 'allure_news_options[allure-news-footer-you-may-miss
     'sanitize_callback' => 'sanitize_text_field'
 ) );
 $wp_customize->add_control( 'allure_news_options[allure-news-footer-you-may-missed-title]', array(
-    'label'     => __( 'Title You May Missed', 'allure-news' ),
-    'description' => __('Title for you may missed this.', 'allure-news'),
+    'label'     => __( 'You May Have Missed Section Title', 'allure-news' ),
+    'description' => __('Enter the title for you may have missed this section.', 'allure-news'),
     'section'   => 'allure_news_you_may_missed_before_footer',
     'settings'  => 'allure_news_options[allure-news-footer-you-may-missed-title]',
     'type'      => 'text',
@@ -571,7 +571,7 @@ $wp_customize->add_control(
     'allure_news_options[allure-news-you-missed-select-category]',
     array(
       'label'     => __( 'Select Category For You may missed', 'allure-news' ),
-      'description' => __('From the dropdown select the category for the footer you may missed section.', 'allure-news'),
+      'description' => __('From the dropdown select the category for you may missed section.', 'allure-news'),
       'section'   => 'allure_news_you_may_missed_before_footer',
       'settings'  => 'allure_news_options[allure-news-you-missed-select-category]',
       'type'      => 'category_dropdown',
@@ -612,7 +612,7 @@ $wp_customize->add_setting( 'allure_news_options[allure-news-footer-you-may-miss
     'sanitize_callback' => 'allure_news_sanitize_checkbox'
 ) );
 $wp_customize->add_control( 'allure_news_options[allure-news-footer-you-may-missed-date]', array(
-    'label'     => __( 'Enable Date on May Missed', 'allure-news' ),
+    'label'     => __( 'Enable Date', 'allure-news' ),
     'description' => __('Checked to enable date on you may missed this section above footer.', 'allure-news'),
     'section'   => 'allure_news_you_may_missed_before_footer',
     'settings'  => 'allure_news_options[allure-news-footer-you-may-missed-date]',
@@ -629,7 +629,7 @@ $wp_customize->add_setting( 'allure_news_options[allure-news-footer-you-may-miss
     'sanitize_callback' => 'allure_news_sanitize_checkbox'
 ) );
 $wp_customize->add_control( 'allure_news_options[allure-news-footer-you-may-missed-category]', array(
-    'label'     => __( 'Enable Category on May Missed', 'allure-news' ),
+    'label'     => __( 'Enable Category', 'allure-news' ),
     'description' => __('Checked to enable category on you may missed this section above footer.', 'allure-news'),
     'section'   => 'allure_news_you_may_missed_before_footer',
     'settings'  => 'allure_news_options[allure-news-footer-you-may-missed-category]',
@@ -646,7 +646,7 @@ $wp_customize->add_setting( 'allure_news_options[allure-news-footer-you-may-miss
     'sanitize_callback' => 'allure_news_sanitize_checkbox'
 ) );
 $wp_customize->add_control( 'allure_news_options[allure-news-footer-you-may-missed-author]', array(
-    'label'     => __( 'Enable Author on May Missed', 'allure-news' ),
+    'label'     => __( 'Enable Author', 'allure-news' ),
     'description' => __('Checked to enable author on you may missed this section above footer.', 'allure-news'),
     'section'   => 'allure_news_you_may_missed_before_footer',
     'settings'  => 'allure_news_options[allure-news-footer-you-may-missed-author]',
@@ -663,7 +663,7 @@ $wp_customize->add_setting( 'allure_news_options[allure-news-footer-you-may-miss
     'sanitize_callback' => 'allure_news_sanitize_checkbox'
 ) );
 $wp_customize->add_control( 'allure_news_options[allure-news-footer-you-may-missed-read-time]', array(
-    'label'     => __( 'Enable Read Time on May Missed', 'allure-news' ),
+    'label'     => __( 'Enable Read Time', 'allure-news' ),
     'description' => __('Checked to enable read time on you may missed this section above footer.', 'allure-news'),
     'section'   => 'allure_news_you_may_missed_before_footer',
     'settings'  => 'allure_news_options[allure-news-footer-you-may-missed-read-time]',
