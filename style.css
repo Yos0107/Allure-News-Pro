@@ -590,6 +590,7 @@ img {
     max-width: 100%;
     /* Adhere to container width. */
     display: block;
+    width: 100%;
 }
 
 figure {
@@ -1496,7 +1497,7 @@ blockquote {
     background: #222;
 }
 
-.allure-news-cat_column .row.clearfix {
+#allure_news_three_category_column_widget-2.allure-news-cat_column .row.clearfix {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
@@ -1519,14 +1520,14 @@ blockquote {
     .left-sidebar .container-inner #primary {
         width: 70%;
         float: right;
-        padding-left: 15px;
+        padding-left: 25px;
         padding-right: 0;
     }
 
     .left-sidebar .container-inner #secondary {
         width: 30%;
         float: left;
-        padding-right: 20px;
+        padding-right: 25px;
         padding-left: 0;
     }
 
@@ -2142,6 +2143,15 @@ blockquote {
     min-width: 20px;
     border-radius: 3px;
     background-color: #000;
+    transition: 0.3s ease-in-out;
+}
+
+.allure-news-social-top .allure-news-menu-social li a:hover {
+    background-color: #fff;
+}
+
+.allure-news-social-top .allure-news-menu-social li a:hover::before {
+    color: #525CEB;
 }
 
 .allure-news-social-top .allure-news-menu-social li a:before {
@@ -3025,7 +3035,8 @@ Post Content
     transform: translate(0, -50%);
 }
 
-.widget-title span {
+.widget-title span,
+.container-title span {
     position: relative;
     background-color: #fff;
     padding-right: 15px;
@@ -3995,16 +4006,23 @@ div.breadcrumbs {
     }
 }
 
-@media screen and (min-width: 768px) {
-    .widget_allure_news_category_tabbed_widget {
-        position: relative;
-    }
+.widget_allure_news_category_tabbed_widget {
+    position: relative;
+}
 
-    .widget_allure_news_category_tabbed_widget .tab-head-wrapper {
-        position: absolute;
-        top: 3px;
-        right: 0;
-    }
+.widget_allure_news_category_tabbed_widget .tab-head-wrapper {
+    position: absolute;
+    top: 3px;
+    right: 0;
+}
+
+.widget_allure_news_category_tabbed_widget .tab-head-wrapper ul {
+    padding-left: 15px;
+}
+
+
+@media screen and (min-width: 768px) {
+
 
     #secondary .widget_allure_news_category_tabbed_widget .tab-head-wrapper {
         position: static;
@@ -4071,14 +4089,14 @@ div.breadcrumbs {
 
 /*---------------------------------------------------
     #  Tabbed Widget
-    *   ----------------------------------------------------- */
+----------------------------------------------------- */
 .widget ul.ct-nav-tabs {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     background-color: #fff;
-    padding-left: 15px;
+    /* padding-left: 15px; */
 }
 
 .widget ul.ct-nav-tabs li {
@@ -4239,6 +4257,10 @@ div.breadcrumbs {
 .widget_allure_news_category_tabbed_widget .featured-tab ul li a .tab-head {
     color: #444;
     font-weight: 600;
+}
+
+.widget_allure_news_category_tabbed_widget .featured-tab ul li a .tab-head:hover {
+    color: #525CEB;
 }
 
 .tab-head-wrapper {
@@ -5051,6 +5073,15 @@ body.admin-bar .ct-sticky {
     }
 }
 
+/* // Large devices (desktops, less than 992px) */
+@media (max-width: 992px) {
+
+    .allure-news-category-tabbed .featured-posts-block .list-post {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
 /* // Large devices (desktops, less than 769px) */
 @media (max-width: 768px) {
 
@@ -5077,10 +5108,29 @@ body.admin-bar .ct-sticky {
         margin-bottom: 0px;
     }
 
+    .allure-news-category-tabbed .widget-title {
+        margin-bottom: 20px;
+    }
+
+    .allure-news-category-tabbed .featured-posts-block .list-post {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .allure-news-category-tabbed .featured-posts-block .list-post li:nth-child(3) {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
     /* responsive for ct-three-cols */
     .ct-below-featured-area.ct-grid-wrapper {
-        padding: 20px 0;
+        padding: 30px 0;
     }
+
+    .ct-below-featured-area .ct-three-cols {
+        margin-bottom: 30px;
+    }
+
+
 }
 
 
@@ -5089,6 +5139,18 @@ body.admin-bar .ct-sticky {
 
     p {
         margin-bottom: 0.5em;
+    }
+
+    .widget {
+        margin-bottom: 20px;
+    }
+
+    .widget.allure-news-cat_column {
+        margin-bottom: 0;
+    }
+
+    .allure-news-category-tabbed .featured-posts-block .list-post {
+        grid-template-columns: 1fr;
     }
 
     .allure-news-cat_column .row.clearfix {
@@ -5101,6 +5163,49 @@ body.admin-bar .ct-sticky {
 
     .ct-missed-block {
         padding: 30px 30px;
+    }
+
+    /* responsive for category-tabbed  */
+
+    .allure-news-category-tabbed .cate-tabs ul.cate-tabs-nav {
+        left: 0;
+        top: 40px;
+        padding-left: 0;
+    }
+
+    .allure-news-category-tabbed .featured-posts-block .list-post li:first-child {
+        margin-top: 30px;
+    }
+
+    /* responsive for popular-news-tabbed */
+
+    .widget_allure_news_category_tabbed_widget .tab-head-wrapper {
+        top: 40px;
+        left: 0;
+    }
+
+    .widget_allure_news_category_tabbed_widget .tab-head-wrapper ul {
+        float: none;
+        padding: 0;
+    }
+
+    .widget_allure_news_category_tabbed_widget .tab-head-wrapper ul li a .tab-head {
+        padding: 5px 10px;
+        color: #fff;
+        background-color: #444;
+        border-radius: 5px;
+        font-weight: normal;
+        transition: 0.3s ease-in-out;
+    }
+
+    .widget_allure_news_category_tabbed_widget .tab-head-wrapper ul li a .tab-head:hover {
+        color: #fff;
+        background-color: #525CEB
+    }
+
+
+    .widget_allure_news_category_tabbed_widget .tab-content {
+        margin-top: 50px;
     }
 
 }
