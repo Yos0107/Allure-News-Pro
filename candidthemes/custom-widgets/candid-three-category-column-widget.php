@@ -68,11 +68,8 @@ if (!class_exists('Allure_News_Category_Three_Column')) {
                             ?>
                             <h2 class="widget-title <?php echo $cat1_class; ?>">
                                 <a href="<?php echo esc_url(get_category_link($cat_id_1)); ?>">
-
-                                    <?php echo esc_html(get_cat_name($cat_id_1)); ?>
-
+                                    <?php echo '<span>' .esc_html(get_cat_name($cat_id_1)) .'</span>'; ?>
                                 </a>
-
                             </h2>
                             <?php
                         }
@@ -247,7 +244,7 @@ if (!class_exists('Allure_News_Category_Three_Column')) {
                             ?>
                             <h2 class="widget-title <?php echo $cat2_class; ?>">
                                 <a href="<?php echo esc_url(get_category_link($cat_id_2)); ?>">
-                                    <?php echo esc_html(get_cat_name($cat_id_2)); ?>
+                                    <?php echo '<span>' .esc_html(get_cat_name($cat_id_2)) .'</span>'; ?>
                                 </a>
                             </h2>
                             <?php
@@ -430,7 +427,7 @@ if (!class_exists('Allure_News_Category_Three_Column')) {
                             ?>
                             <h2 class="widget-title <?php echo $cat3_class; ?>">
                                 <a href="<?php echo esc_url(get_category_link($cat_id_3)); ?>">
-                                    <?php echo esc_html(get_cat_name($cat_id_3)); ?>
+                                    <?php echo '<span>' .esc_html(get_cat_name($cat_id_3)) .'</span>'; ?>
                                 </a>
                             </h2>
                             <?php
