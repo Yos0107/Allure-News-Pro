@@ -58,12 +58,12 @@ if (!class_exists('Allure_News_Tabbed_Post')) :
                 <ul class="nav nav-tabs ct-nav-tabs">
                     <?php if (!empty($popular_title)) { ?>
                         <li class="ct-title-head active"><a data-toggle="tab"
-                          href="#home"><?php esc_html($popular_title); ?></a>
+                          href="#home"><?php esc_html_e($popular_title); ?></a>
                       </li>
                   <?php } ?>
                   <?php if (!empty($recent_title)) { ?>
                     <li class="ct-title-head"><a data-toggle="tab"
-                       href="#menu1"><?php esc_html($recent_title); ?></a>
+                       href="#menu1"><?php esc_html_e($recent_title); ?></a>
                    </li>
                <?php } ?>
            </ul>
