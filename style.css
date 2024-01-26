@@ -3047,7 +3047,7 @@ Post Content
     transform: translate(0, -50%);
 }
 
-.widget-title span,
+.top-footer .widget-title span,
 .container-title span {
     position: relative;
     background-color: #fff;

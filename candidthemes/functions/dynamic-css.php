@@ -506,7 +506,7 @@ if (!function_exists('allure_news_dynamic_css')) :
         //Footer Section Color
         if(!empty($allure_news_theme_options['allure-news-footer-background-color'])){
             $footer_section_bg = $allure_news_theme_options['allure-news-footer-background-color'];
-            $allure_news_custom_css .= ".top-footer{ background-color : {$footer_section_bg}; }";
+            $allure_news_custom_css .= ".top-footer, .top-footer .widget-title span{ background-color : {$footer_section_bg}; }";
         }
 
         if(!empty($allure_news_theme_options['allure-news-footer-text-color'])){
