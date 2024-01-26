@@ -4833,32 +4833,16 @@ body.admin-bar .ct-sticky {
 /*---------------------------------------------------
 # Footer Social Media
 *   ----------------------------------------------------- */
-.ct-footer-social {
-    display: table;
-    width: 100%;
-}
-
-.ct-footer-social .allure-news-menu-social {
-    display: table-row;
-}
-
-.ct-footer-social .allure-news-menu-social li {
-    display: table-cell;
-    max-width: 0px;
-    margin: 0;
-}
-
-.ct-footer-social .allure-news-menu-social li a {
-    display: block;
-    margin: 0;
-    width: 100%;
-    text-align: center;
-    height: auto;
+.site-footer .ct-footer-social {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    padding-top: 30px;
 }
 
 .ct-footer-social .allure-news-menu-social li a:before {
-    font-size: 36px;
-    line-height: 120px;
+    font-size: 16px;
+    line-height: 26px;
 }
 
 .ct-show-search {
@@ -5131,15 +5115,14 @@ body.admin-bar .ct-sticky {
         margin-bottom: 30px;
     }
 
-<<<<<<< HEAD
+    <<<<<<< HEAD
     /* responsive for top footer  */
 
     .top-footer {
         padding: 0;
     }
-=======
 
->>>>>>> 7f3cd638d67add7ea33e6c68ca569daca6c6550d
+    =======>>>>>>>7f3cd638d67add7ea33e6c68ca569daca6c6550d
 }
 
 /* // Large devices (desktops, less than 576px) */
