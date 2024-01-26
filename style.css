@@ -2550,7 +2550,7 @@ blockquote {
 
 
 .navbar-nav .sub-menu li {
-    width: 200px;
+    width: 160px;
 }
 
 .main-navigation li li a,
@@ -3656,13 +3656,11 @@ footer .site-info {
 }
 
 .site-footer .ct-footer-social {
-    position: absolute;
-    top: -25px;
     background-color: black;
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 /*------------------------------------- */
@@ -4818,6 +4816,8 @@ body.ct-dark-mode,
 }
 
 .cat-links a,
+.slide-details a,
+.slide-details a:hover,
 .cat-links a:visited,
 .cat-links a:hover,
 .cat-links a:visited:hover,
@@ -4953,8 +4953,8 @@ body.admin-bar .ct-sticky {
     }
 
     .ct-footer-social .allure-news-menu-social li a:before {
-        font-size: 20px;
-        line-height: 48px;
+        /* font-size: 20px;
+        line-height: 28px; */
     }
 }
 
@@ -5179,6 +5179,13 @@ body.admin-bar .ct-sticky {
     }
 
 
+    /* responsive for top footer  */
+
+    .top-footer {
+        padding: 0;
+    }
+
+
 }
 
 
@@ -5210,7 +5217,15 @@ body.admin-bar .ct-sticky {
     }
 
     .ct-missed-block {
-        padding: 30px 30px;
+        padding: 30px 15px;
+    }
+
+    .ct-cat-cols .ct-two-cols:nth-child(2) {
+        margin-top: 30px;
+    }
+
+    .ct-below-featured-area .ct-three-cols:last-child {
+        margin-bottom: 0;
     }
 
     /* responsive for category-tabbed  */
@@ -5253,6 +5268,12 @@ body.admin-bar .ct-sticky {
 
     .widget_allure_news_category_tabbed_widget .tab-content {
         margin-top: 50px;
+    }
+
+    /* responsive for top footer  */
+
+    .top-footer {
+        padding-bottom: 0;
     }
 
 }
