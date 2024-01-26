@@ -88,11 +88,11 @@ if (!function_exists('allure_news_constuct_modern_carousel')) {
                                                         <?php
                                                         if ($allure_news_site_layout == 'boxed') {
                                                             ?>
-                                                            <img src="<?php echo get_template_directory_uri().'/candidthemes/assets/images/allure-mag-carousel-landscape.jpg' ?>" alt="<?php the_title(); ?>">
+                                                            <img src="<?php echo esc_url(get_template_directory_uri().'/candidthemes/assets/images/allure-mag-carousel-landscape.jpg'); ?>" alt="<?php the_title(); ?>">
                                                             <?php
                                                         } else {
                                                             ?>
-                                                            <img src="<?php echo get_template_directory_uri().'/candidthemes/assets/images/allure-mag-carousel-large-landscape.jpg' ?>" alt="<?php the_title(); ?>">
+                                                            <img src="<?php echo esc_url(get_template_directory_uri().'/candidthemes/assets/images/allure-mag-carousel-large-landscape.jpg'); ?>" alt="<?php the_title(); ?>">
                                                             <?php
                                                         }
                                                         ?>

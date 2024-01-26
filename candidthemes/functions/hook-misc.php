@@ -154,7 +154,7 @@ if (!function_exists('allure_news_posts_navigation')) :
                 $output_page = $page_number + 1;
             }
             if(paginate_links()) {
-                echo "<div class='ajax-pagination text-center'><div class='show-more' data-number='$output_page'><i class='fa fa-refresh'></i>" . __('Load More', 'mag-and-news') . "</div><div id='free-temp-post'></div></div>";
+                echo "<div class='ajax-pagination text-center'><div class='show-more' data-number='$output_page'><i class='fa fa-refresh'></i>" . __('Load More', 'allure-news') . "</div><div id='free-temp-post'></div></div>";
             }
         }else {
             echo "<div class='candid-pagination'>";
@@ -404,12 +404,12 @@ if (!function_exists('allure_news_main_carousel')) :
                                             <?php
                                             if ($allure_news_site_layout == 'boxed') {
                                                 ?>
-                                                <img src="<?php echo get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-carousel.jpg' ?>"
+                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-carousel.jpg'); ?>"
                                                      alt="<?php the_title(); ?>">
                                                 <?php
                                             } else {
                                                 ?>
-                                                <img src="<?php echo get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-carousel-large.jpg' ?>"
+                                                <img src="<?php echo esc_url(get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-carousel-large.jpg'); ?>"
                                                      alt="<?php the_title(); ?>">
                                                 <?php
                                             }

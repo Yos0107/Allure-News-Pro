@@ -2540,7 +2540,7 @@ blockquote {
 }
 
 .navbar-nav .sub-menu li {
-    width: 160px;
+    width: 200px;
 }
 
 .main-navigation li li a,
@@ -2720,6 +2720,11 @@ ul.ct-carousel {
 
 .slide-details:hover {
     background: rgba(255, 255, 255, 0.9);
+}
+
+.slide-details a:hover,
+.slide-details:hover a {
+    color: #000;
 }
 
 .slide-details h2 {
@@ -3628,26 +3633,7 @@ footer .site-info {
     background: #000;
 }
 
-<<<<<<< HEAD
-/*------------------------------------- */
-/* footer social-media */
-
-.ct-footer-social .allure-news-menu-social {
-    display: flex;
-    gap: 10px;
-}
-
-.site-footer .ct-footer-social {
-    background-color: black;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-}
-
-/*------------------------------------- */
-
-=======>>>>>>>903eaaeb4d839ecb840711f6687a114b5e913a24 .ct-col-3,
+.ct-col-3,
 .ct-col-2,
 .ct-col-1 {
     width: 100%;
@@ -4793,8 +4779,6 @@ body.ct-dark-mode,
 }
 
 .cat-links a,
-.slide-details a,
-.slide-details a:hover,
 .cat-links a:visited,
 .cat-links a:hover,
 .cat-links a:visited:hover,
@@ -4930,8 +4914,8 @@ body.admin-bar .ct-sticky {
     }
 
     .ct-footer-social .allure-news-menu-social li a:before {
-        /* font-size: 20px;
-        line-height: 28px; */
+        font-size: 20px;
+        line-height: 48px;
     }
 }
 
@@ -5147,13 +5131,6 @@ body.admin-bar .ct-sticky {
     }
 
 
-    /* responsive for top footer  */
-
-    .top-footer {
-        padding: 0;
-    }
-
-
 }
 
 
@@ -5185,15 +5162,7 @@ body.admin-bar .ct-sticky {
     }
 
     .ct-missed-block {
-        padding: 30px 15px;
-    }
-
-    .ct-cat-cols .ct-two-cols:nth-child(2) {
-        margin-top: 30px;
-    }
-
-    .ct-below-featured-area .ct-three-cols:last-child {
-        margin-bottom: 0;
+        padding: 30px 30px;
     }
 
     /* responsive for category-tabbed  */
@@ -5237,12 +5206,6 @@ body.admin-bar .ct-sticky {
 
     .widget_allure_news_category_tabbed_widget .tab-content {
         margin-top: 50px;
-    }
-
-    /* responsive for top footer  */
-
-    .top-footer {
-        padding-bottom: 0;
     }
 
 }

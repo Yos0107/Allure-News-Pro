@@ -116,7 +116,7 @@ if (!class_exists('Allure_News_Video_Widget')) {
                                     <?php
                                 } elseif ($show_default_image != 1) { ?>
                                     <div class="post-thumb">
-                                        <img src="<?php echo get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-carousel.jpg' ?>"
+                                        <img src="<?php echo esc_url(get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-carousel.jpg'); ?>"
                                              alt="<?php the_title(); ?>">
                                         <a class="ct-popup popup" href="<?php echo esc_url($video_link); ?>">
                                             <div class="video-icon">

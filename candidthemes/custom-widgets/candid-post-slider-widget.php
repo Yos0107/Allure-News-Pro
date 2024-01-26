@@ -102,7 +102,7 @@ if (!class_exists('Allure_News_Post_Slider')) :
                                             the_post_thumbnail('allure-news-carousel-large-img');
                                         }else{
                                             ?>
-                                            <img src="<?php echo get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-carousel-large.jpg' ?>"
+                                            <img src="<?php echo esc_url(get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-carousel-large.jpg'); ?>"
                                                  alt="<?php the_title(); ?>">
                                             <?php
                                         }

@@ -446,7 +446,7 @@ if (!function_exists('allure_news_post_carousel_customizer')) {
                                     allure_news_post_formats(get_the_ID());
                                     ?>
                                     <a href="<?php the_permalink(); ?>">
-                                        <img src="<?php echo get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-carousel.jpg' ?>"
+                                        <img src="<?php echo esc_url(get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-carousel.jpg'); ?>"
                                              alt="<?php the_title(); ?>">
 
                                     </a>
@@ -592,7 +592,7 @@ if (!function_exists('allure_news_post_grid_layout')) {
                                             allure_news_post_formats(get_the_ID());
                                             ?>
                                             <a href="<?php the_permalink(); ?>">
-                                                <img src="<?php echo get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-carousel.jpg' ?>"
+                                                <img src="<?php echo esc_url(get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-carousel.jpg'); ?>"
                                                      alt="<?php the_title(); ?>">
 
                                             </a>
@@ -665,7 +665,7 @@ if (!function_exists('allure_news_post_grid_layout')) {
                                                 <?php } elseif ($show_default_image != 1) { ?>
                                                     <div class="post-thumb">
                                                         <a href="<?php the_permalink(); ?>">
-                                                            <img src="<?php echo get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-thumb.jpg' ?>"
+                                                            <img src="<?php echo esc_url(get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-thumb.jpg'); ?>"
                                                                  alt="<?php the_title(); ?>">
                                                         </a>
                                                     </div><!-- Post thumb end -->
@@ -777,7 +777,7 @@ if (!function_exists('allure_news_post_grid_layout')) {
                                             allure_news_post_formats(get_the_ID());
                                             ?>
                                             <a href="<?php the_permalink(); ?>">
-                                                <img src="<?php echo get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-carousel.jpg' ?>"
+                                                <img src="<?php echo esc_url(get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-carousel.jpg'); ?>"
                                                      alt="<?php the_title(); ?>">
 
                                             </a>
@@ -851,7 +851,7 @@ if (!function_exists('allure_news_post_grid_layout')) {
                                                 <?php } elseif ($show_default_image != 1) { ?>
                                                     <div class="post-thumb">
                                                         <a href="<?php the_permalink(); ?>">
-                                                            <img src="<?php echo get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-thumb.jpg' ?>"
+                                                            <img src="<?php echo esc_url(get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-thumb.jpg'); ?>"
                                                                  alt="<?php the_title(); ?>">
                                                         </a>
                                                     </div><!-- Post thumb end -->
@@ -957,7 +957,7 @@ if (!function_exists('allure_news_post_grid_layout')) {
 
                                         <div class="post-thumb">
                                             <a href="<?php the_permalink(); ?>">
-                                                <img src="<?php echo get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-carousel.jpg' ?>"
+                                                <img src="<?php echo esc_url(get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-carousel.jpg'); ?>"
                                                      alt="<?php the_title(); ?>">
 
                                             </a>
@@ -1029,8 +1029,8 @@ if (!function_exists('allure_news_post_grid_layout')) {
                                                 <?php } elseif ($show_default_image != 1) { ?>
                                                     <div class="post-thumb">
                                                         <a href="<?php the_permalink(); ?>">
-                                                            <img src="<?php echo get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-thumb.jpg' ?>"
-                                                                 alt="<?php the_title(); ?>">
+                                                            <img src="<?php echo esc_url(get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-thumb.jpg'); ?>"
+                                                                alt="<?php the_title(); ?>">
                                                         </a>
                                                     </div><!-- Post thumb end -->
                                                 <?php } ?>

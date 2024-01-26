@@ -112,7 +112,7 @@ if (!class_exists('Allure_News_Grid_Post')) :
                                         allure_news_post_formats(get_the_ID());
                                         ?>
                                         <a href="<?php the_permalink(); ?>">
-                                            <img src="<?php echo get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-carousel.jpg' ?>"
+                                            <img src="<?php echo esc_url(get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-carousel.jpg'); ?>"
                                                  alt="<?php the_title(); ?>">
 
                                         </a>
