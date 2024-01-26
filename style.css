@@ -3047,13 +3047,14 @@ Post Content
     transform: translate(0, -50%);
 }
 
-.top-footer .widget-title span,
+.widget-title span,
 .container-title span {
     position: relative;
     background-color: #fff;
     padding-right: 15px;
     z-index: 1;
 }
+
 
 .widget ul.ct-nav-tabs:before {
     height: 0;
