@@ -1,10 +1,12 @@
 /*
-Theme Name: Allure News Pro (Premium)
+Theme Name: Allure News Pro
 Theme URI: https://www.candidthemes.com/themes/allure-news-pro/
 Author: candidthemes
 Author URI: http://www.candidthemes.com/
 Description: The Allure News Pro is a premium magazine WordPress theme. It is easy to use, customize and lightweight WordPress theme. In addition to that, this theme comes with one click demo import option, added custom widgets, unlimited color possibilites and font options for every sections. Typography options like font size, weight, letter spacing help to manage the content in an attractive way. Furthermore, Allure News Pro is advertisement ready WordPress theme with SEO optimized code. Besides that, this theme support major and popular plugins. This premium theme has multiple blog column layout, single page advertisement area, related posts, comment form position change option, etc. Similiarly, it has meta options, header and footer options, sidebar options, individual sidebar for single post and many more.
-Version: 1.1.9
+Version: 1.0.0
+Tested up to: 6.4.1
+Requires PHP: 5.6
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: allure-news
@@ -1580,7 +1582,6 @@ blockquote {
     }
 
     #primary article.three-columns,
-
     .ct-below-featured-area .ct-three-cols,
     .ct-above-footer .ct-three-cols,
     .allure-news-three-col,
@@ -5081,6 +5082,7 @@ body.admin-bar .ct-sticky {
     padding-top: 0;
 }
 
+
 /* // Large devices (desktops, less than 1200px) */
 @media (max-width: 1200px) {
     .allure-news-cat_column .row.clearfix {
@@ -5096,7 +5098,6 @@ body.admin-bar .ct-sticky {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-
 
 /* // Large devices (desktops, less than 769px) */
 @media (max-width: 768px) {
@@ -5146,16 +5147,12 @@ body.admin-bar .ct-sticky {
         margin-bottom: 30px;
     }
 
-
     /* responsive for top footer  */
 
     .top-footer {
         padding: 0;
     }
-
-
 }
-
 
 /* // Large devices (desktops, less than 576px) */
 @media (max-width: 576px) {
