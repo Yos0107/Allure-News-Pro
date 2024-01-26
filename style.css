@@ -2796,6 +2796,7 @@ ul.ct-carousel {
 
 .ct-header-carousel-section .slick-list .post-thumb img {
     min-height: 305px;
+    object-fit: cover;
 }
 
 .ct-missed-block.widget {
@@ -3078,7 +3079,7 @@ Post Content
 .ct-title-head {
     color: #fff;
     display: inline-block;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 1;
     position: relative;
@@ -3655,9 +3656,12 @@ footer .site-info {
 
 .site-footer .ct-footer-social {
     position: absolute;
-    top: 5px;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    top: -25px;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
 }
 
 /*------------------------------------- */
@@ -3894,6 +3898,11 @@ div.breadcrumbs {
     z-index: 1;
     content: '';
 }
+
+.ct-below-featured-area .ct-post-overlay .post-thumb a img {
+    /* max-height: 200px; */
+}
+
 
 .ct-post-overlay .post-content,
 .ct-post-overlay .post-content a,
@@ -4885,7 +4894,7 @@ body.admin-bar .ct-sticky {
 }
 
 .ct-footer-social .allure-news-menu-social li a:before {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
 }
 
