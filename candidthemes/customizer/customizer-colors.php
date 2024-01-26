@@ -345,8 +345,8 @@ $wp_customize->add_control(
         $wp_customize,
         'allure_news_options[allure-news-logo-section-background]',
         array(
-            'label'       => esc_html__( 'Background Color', 'allure-news' ),
-            'description' => esc_html__( 'Will change the color of background logo.', 'allure-news' ),
+            'label'       => esc_html__( 'Logo Section Background Color', 'allure-news' ),
+            'description' => esc_html__( 'Change the Background color logo section.', 'allure-news' ),
             'section'     => 'logo_colors',
         )
     )
