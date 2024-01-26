@@ -160,7 +160,7 @@ $wp_customize->add_setting('allure_news_options[allure-news-font-line-height]', 
 ));
 
 $wp_customize->add_control('allure_news_options[allure-news-font-line-height]', array(
-    'label' => __('Line Height', 'ocius'),
+    'label' => __('Line Height', 'allure-news'),
     'section' => 'allure_news_font_options',
     'type'    => 'number',
     'description' => __( 'Increase/Decrease Line Height.', 'allure-news' ),
@@ -252,7 +252,7 @@ $wp_customize->add_setting('allure_news_options[allure-news-menu-font-line-heigh
 ));
 
 $wp_customize->add_control('allure_news_options[allure-news-menu-font-line-height]', array(
-    'label' => __('Line Height', 'ocius'),
+    'label' => __('Line Height', 'allure-news'),
     'section' => 'allure_news_menu_font_options',
     'type'    => 'number',
     'description' => __( 'Increase/Decrease Line Height.', 'allure-news' ),
@@ -529,7 +529,7 @@ $wp_customize->add_setting('allure_news_options[allure-news-widget-font-line-hei
 ));
 
 $wp_customize->add_control('allure_news_options[allure-news-widget-font-line-height]', array(
-    'label' => __('Line Height', 'ocius'),
+    'label' => __('Line Height', 'allure-news'),
     'section' => 'allure_news_widget_font_options',
     'type'    => 'number',
     'description' => __( 'Increase/Decrease Line Height.', 'allure-news' ),

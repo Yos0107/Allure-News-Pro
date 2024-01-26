@@ -127,7 +127,7 @@ if (!class_exists('Allure_News_Thumb_Posts')) :
                                         } else { ?>
                                             <div class="post-thumb">
                                                 <a href="<?php the_permalink(); ?>">
-                                                    <img src="<?php echo get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-thumb.jpg' ?>"
+                                                    <img src="<?php echo esc_url(get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-thumb.jpg'); ?>"
                                                          alt="<?php the_title(); ?>">
                                                 </a>
                                             </div><!-- Post thumb end -->

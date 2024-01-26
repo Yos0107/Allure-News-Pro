@@ -121,7 +121,7 @@ if (!class_exists('Allure_News_Featured_Post')) :
                                             allure_news_post_formats(get_the_ID());
                                             ?>
                                             <a href="<?php the_permalink(); ?>">
-                                                <img src="<?php echo get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-carousel.jpg' ?>"
+                                                <img src="<?php echo esc_url(get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-carousel.jpg'); ?>"
                                                      alt="<?php the_title(); ?>">
 
                                             </a>
@@ -190,7 +190,7 @@ if (!class_exists('Allure_News_Featured_Post')) :
                                     } elseif ($show_default_image != 1) { ?>
                                         <div class="post-thumb">
                                             <a href="<?php the_permalink(); ?>">
-                                                <img src="<?php echo get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-thumb.jpg' ?>"
+                                                <img src="<?php echo esc_url(get_template_directory_uri() . '/candidthemes/assets/images/allure-mag-thumb.jpg'); ?>"
                                                      alt="<?php the_title(); ?>">
                                             </a>
                                         </div><!-- Post thumb end -->

@@ -97,7 +97,7 @@ if (!function_exists('allure_news_top_date')) {
                     <?php
                     $allure_news_date_format = $allure_news_theme_options['allure-news-top-header-date-format'];
                     if ($allure_news_date_format == 'default-date') {
-                        echo date_i18n(__('l, F d, Y', 'engage-mag'));
+                        echo date_i18n(__('l, F d, Y', 'allure-news'));
                     } else {
                         echo date(get_option('date_format'));
                     }
