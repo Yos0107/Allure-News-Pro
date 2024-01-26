@@ -25,6 +25,8 @@ $wp_customize->add_section(
 $wp_customize->add_setting( 'allure_news_options[allure-news-site-title-hover]',
     array(
         'sanitize_callback' => 'sanitize_hex_color',
+        'default'           => $default['allure-news-site-title-hover'],
+
     )
 );
 $wp_customize->add_control(
@@ -43,6 +45,8 @@ $wp_customize->add_control(
 $wp_customize->add_setting( 'allure_news_options[allure-news-site-tagline]',
     array(
         'sanitize_callback' => 'sanitize_hex_color',
+        'default'           => $default['allure-news-site-tagline'],
+
     )
 );
 $wp_customize->add_control(
@@ -61,6 +65,8 @@ $wp_customize->add_control(
 $wp_customize->add_setting( 'allure_news_options[allure-news-primary-color]',
     array(
         'sanitize_callback' => 'sanitize_hex_color',
+        'default'           => $default['allure-news-primary-color'],
+
     )
 );
 $wp_customize->add_control(

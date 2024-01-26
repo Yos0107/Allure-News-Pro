@@ -38,20 +38,20 @@ if ( !function_exists('allure_news_default_theme_options_values') ) :
             'allure-news-menu-active-color'=> '',
             
             /*Featured Text Color*/
-            'allure-news-featured-text-color'=> '',
-            'allure-news-featured-text-hover-color'=> '',
+            'allure-news-featured-text-color'=> '#fff',
+            'allure-news-featured-text-hover-color'=> '#fff',
             
             /*Footer Widget Area*/
-            'allure-news-footer-background-color' => '',
+            'allure-news-footer-background-color' => '#000',
             'allure-news-footer-text-color'=> '',
             'allure-news-footer-link-color'=> '',
-            'allure-news-footer-link-hover-color'=> '',
+            'allure-news-footer-link-hover-color'=> '#525CEB',
             
             /*Footer Copyright Area*/
-            'allure-news-footer-cr-background-color'=>'',
+            'allure-news-footer-cr-background-color'=>'#000',
             'allure-news-footer-cr-text-color'=> '',
             'allure-news-footer-cr-link-color'=>'',
-            'allure-news-footer-cr-link-hover-color'=> '',
+            'allure-news-footer-cr-link-hover-color'=> '#525CEB',
             'allure-news-footer-cr-to-top-background-color'=> '',
             'allure-news-footer-cr-to-top-arrow-color'=> '',
 
@@ -155,7 +155,7 @@ if ( !function_exists('allure_news_default_theme_options_values') ) :
             'allure-news-social-share-layout-options'=>'icons-only',
 
             /*Footer Section*/
-            'allure-news-footer-copyright' =>  esc_html__('All Rights Reserved 2023.','allure-news'),
+            'allure-news-footer-copyright' =>  esc_html__('All Rights Reserved 2024.','allure-news'),
             'allure-news-go-to-top'=> true,
             'allure-news-footer-social-icons' => false,
             'allure-news-footer-powered-text' =>  sprintf( esc_html__('Proudly powered by %1$s %2$s Theme: %3$s by %4$s.','allure-news') , '<a href="https://wordpress.org/" target="_blank">WordPress</a>', ' <span class="sep"> | </span>', 'Allure News Pro', '<a href="https://www.candidthemes.com/" target="_blank">Candid Themes</a>' ),

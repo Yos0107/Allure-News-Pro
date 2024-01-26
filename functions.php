@@ -196,8 +196,8 @@ function allure_news_widgets_init()
         'description'   => esc_html__( 'Add widgets here.', 'allure-news' ),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget'  => '</section>',
-        'before_title'  => '<h2 class="widget-title">',
-        'after_title'   => '</h2>',
+        'before_title'  => '<h2 class="widget-title"><span>',
+        'after_title'   => '</span></h2></span>',
     ) );
     register_sidebar( array(
         'name'          => esc_html__( 'Footer Widget 2', 'allure-news' ),
@@ -205,8 +205,8 @@ function allure_news_widgets_init()
         'description'   => esc_html__( 'Add widgets here.', 'allure-news' ),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget'  => '</section>',
-        'before_title'  => '<h2 class="widget-title">',
-        'after_title'   => '</h2>',
+        'before_title'  => '<h2 class="widget-title"><span>',
+        'after_title'   => '</span></h2>',
     ) );
     register_sidebar( array(
         'name'          => esc_html__( 'Footer Widget 3', 'allure-news' ),
@@ -214,8 +214,8 @@ function allure_news_widgets_init()
         'description'   => esc_html__( 'Add widgets here.', 'allure-news' ),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget'  => '</section>',
-        'before_title'  => '<h2 class="widget-title">',
-        'after_title'   => '</h2>',
+        'before_title'  => '<h2 class="widget-title"><span>',
+        'after_title'   => '</span></h2>',
     ) );
     register_sidebar( array(
         'name'          => esc_html__( 'Above Footer(Full Width)', 'allure-news' ),
