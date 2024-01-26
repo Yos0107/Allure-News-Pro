@@ -10,15 +10,16 @@ if ( !function_exists('allure_news_default_theme_options_values') ) :
 
             /*General Colors*/
             'allure-news-primary-color' => '#525CEB',
-            'allure-news-boxed-back-ground-color'=> '',
-            'allure-news-sidebar-background-color'=> '',
+            'allure-news-boxed-back-ground-color'=> '#fff',
+            'allure-news-sidebar-background-color'=> '#fff',
             'allure-news-body-text-color'=>'#000',
             'allure-news-body-link-color'=>'#525CEB',
             'allure-news-body-link-hover-color'=> '#525CEB',
             'allure-news-body-link-visited-color'=> '',
-            'allure-news-body-link-underline-color'=> '',
-            'allure-news-site-title-hover'=> '',
-            'allure-news-site-tagline'=> '',
+            'allure-news-body-link-underline-color'=> '#525CEB',
+            'allure-news-site-title'=> '#fff',
+            'allure-news-site-title-hover'=> '#fff',
+            'allure-news-site-tagline'=> '#fff',
             
             /*Top Header Colors*/
             'allure-news-top-header-background-color'=> '#525CEB',
@@ -31,7 +32,7 @@ if ( !function_exists('allure_news_default_theme_options_values') ) :
             'allure-news-logo-section-background' => '#4240ed',
             
             /*Menu Colors*/
-            'allure-news-menu-background-color'=> '',
+            'allure-news-menu-background-color'=> '#000',
             'allure-news-sub-menu-background-color'=> '',
             'allure-news-menu-text-color'=> '',
             'allure-news-menu-hover-color'=> '',

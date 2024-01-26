@@ -21,6 +21,27 @@ $wp_customize->add_section(
     )
 );
 
+
+/* Site Title color */
+$wp_customize->add_setting( 'allure_news_options[allure-news-site-title]',
+    array(
+        'sanitize_callback' => 'sanitize_hex_color',
+        'default'           => $default['allure-news-site-title'],
+
+    )
+);
+$wp_customize->add_control(
+    new WP_Customize_Color_Control(
+        $wp_customize,
+        'allure_news_options[allure-news-site-title]',
+        array(
+            'label'       => esc_html__( 'Site Title Color', 'allure-news' ),
+            'description' => esc_html__( 'Change the color of site title.', 'allure-news' ),
+            'section'     => 'colors',
+        )
+    )
+);
+
 /* Site Title hover color */
 $wp_customize->add_setting( 'allure_news_options[allure-news-site-title-hover]',
     array(
@@ -40,7 +61,6 @@ $wp_customize->add_control(
         )
     )
 );
-
 /* Site tagline color */
 $wp_customize->add_setting( 'allure_news_options[allure-news-site-tagline]',
     array(
