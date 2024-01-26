@@ -2722,11 +2722,6 @@ ul.ct-carousel {
     background: rgba(255, 255, 255, 0.9);
 }
 
-.slide-details a:hover,
-.slide-details:hover a {
-    color: #000;
-}
-
 .slide-details h2 {
     font-size: 28px;
 }
@@ -3652,9 +3647,7 @@ footer .site-info {
 
 /*------------------------------------- */
 
-=======
->>>>>>> 903eaaeb4d839ecb840711f6687a114b5e913a24
-.ct-col-3,
+=======>>>>>>>903eaaeb4d839ecb840711f6687a114b5e913a24 .ct-col-3,
 .ct-col-2,
 .ct-col-1 {
     width: 100%;
