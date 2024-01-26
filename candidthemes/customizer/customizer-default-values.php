@@ -93,7 +93,7 @@ if ( !function_exists('allure_news_default_theme_options_values') ) :
             /*Header Ads Default Value*/
             'allure-news-enable-ads-header'=> false,
             'allure-news-header-ads-image'=> '',
-            'allure-news-header-ads-image-link'=> 'https://www.candidthemes.com/themes/allure-news/',
+            'allure-news-header-ads-image-link'=> 'https://www.candidthemes.com/themes/allure-pro/',
             'allure-news-header-ads-selection'=>'image',
             'allure-news-header-ads-code'=> '',
 
