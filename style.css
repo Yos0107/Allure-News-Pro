@@ -2689,6 +2689,7 @@ ul.ct-carousel {
 .ct-carousel-inner img {
     border-radius: 10px;
     max-height: 480px;
+    object-fit: cover;
 }
 
 .slide-details {
