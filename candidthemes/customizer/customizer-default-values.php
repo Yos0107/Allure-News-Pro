@@ -27,6 +27,7 @@ if ( !function_exists('allure_news_default_theme_options_values') ) :
             'allure-news-top-header-trending-text-color'=> '',
             'allure-news-top-header-text-color'=>'',
             'allure-news-top-header-text-hover'=>'#fff',
+            'allure-news-post-speed' => 10,
 
             /*Logo Section Colors*/
             'allure-news-logo-section-background' => '#4240ed',
