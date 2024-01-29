@@ -14,6 +14,8 @@ $wp_customize->add_section( 'allure_news_header_ads_section', array(
    'title'          => __( 'Header Ads Options', 'allure-news' ),
    'panel' 		 => 'allure_news_panel',
 ) );
+
+
 /*callback functions header section*/
 if ( !function_exists('allure_news_ads_header_active_callback') ) :
   function allure_news_ads_header_active_callback(){

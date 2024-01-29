@@ -245,16 +245,17 @@ if (!function_exists('allure_news_header_ads')) {
                 <div class="logo-right-wrapper clearfix  <?php echo $logo_class ?>">
                     <?php
                     if (!empty($allure_news_header_ad_image) && (!empty($allure_news_header_ad_url))) {
+                        
                         ?>
                         <a href="<?php echo $allure_news_header_ad_url ?>" target="_blank">
                             <img src="<?php echo $allure_news_header_ad_image; ?>"
-                                 class="<?php echo logo_right_class; ?>">
+                                 class="<?php echo $logo_right_class; ?>">
                         </a>
                         <?php
                     } else if (!empty($allure_news_header_ad_image)) {
                         ?>
                         <img src="<?php echo $allure_news_header_ad_image; ?>"
-                             class="<?php echo logo_right_class; ?>">
+                             class="<?php echo $logo_right_class; ?>">
                         <?php
                     }
                     ?>
