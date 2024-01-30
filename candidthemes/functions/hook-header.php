@@ -232,7 +232,7 @@ if (!function_exists('allure_news_header_ads')) {
         if ($logo_position == 'center') {
             $logo_class = 'full-wrapper text-center';
             $logo_right_class = 'full-wrapper';
-        } else {
+        } else {    
             $logo_class = 'float-left';
             $logo_right_class = 'float-right';
         }
