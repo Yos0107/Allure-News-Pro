@@ -41,11 +41,16 @@ Allure News Pro is distributed under the terms of the GNU General Public License
 
 == Images Used in Screenshot ==
 https://pxhere.com/en/photo/1037258   - [CCO License]
-https://pxhere.com/en/photo/523781   - [CCO License]
+https://pxhere.com/en/photo/523781    - [CCO License]
 https://pxhere.com/en/photo/1456583   - [CCO License]
+https://pxhere.com/en/photo/1026132   - [CCO License]
 https://pxhere.com/en/photo/1674402   - [CCO License]
+https://pxhere.com/en/photo/914051    - [CCO License]
+https://pxhere.com/en/photo/1517587   - [CCO License]
+https://pxhere.com/en/photo/1183330   - [CCO License]
+
 https://stocksnap.io/photo/colorful-graffiti-5JJD8YWR1C - [CCO License]
-https://stocksnap.io/photo/smartphone-camera-TBGNSSQV6B - [CCO License]
+https://stocksnap.io/photo/nature-landscape-NYNXQCXVLB - [CCO License]
 
 
 All the other images are self created and licensed under GPL.
